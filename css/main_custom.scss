@@ -2932,7 +2932,7 @@ $blurBg: #ffffff1f;
   background: #ffffff1f;
   backdrop-filter: blur(20px);
   height: 100px;
-  width: calc(100% - 120px - 4.84rem);
+  width: calc(100% - 120px - 2.8rem);
   right: 0;
   padding: 0.5rem 2rem;
   display: flex;
@@ -2946,6 +2946,7 @@ $blurBg: #ffffff1f;
   .verticalSeparator {
     margin-left: 1rem;
     margin-right: 2rem;
+    margin-top: 0.9rem;
     transform: rotate(20deg);
   }
 
@@ -2967,6 +2968,7 @@ $blurBg: #ffffff1f;
       font-family: $mainFont;
       font-size: 1.8rem;
       letter-spacing: 2px;
+      line-height: 60px;
     }
   }
 
@@ -2977,6 +2979,7 @@ $blurBg: #ffffff1f;
       font-size: 1.7rem;
       font-family: $mainFont;
       margin-right: 0.5rem;
+      line-height: 60px;
       span {
         font-size: 1.7rem;
         font-family: $mainFont;
@@ -2998,15 +3001,34 @@ $blurBg: #ffffff1f;
     left: unset;
     font-size: 1.8rem;
     letter-spacing: 1px;
-    font-family: $mainFont;
     margin-left: 20px;
     background: #ffffff29;
-    padding: 0.2rem 2rem 0.2rem 2rem;
+    padding: 0rem 2rem;
     border-radius: 100px;
     color: $c_white;
+    display: flex;
+    align-items: center;
+    margin-left: 3rem;
+    padding-left: 2.4rem;
+
     &::before {
       content: "LVL ";
       opacity: 0.5;
+      margin-right: 0.5rem;
+    }
+
+    &::before,
+    #mLevelContV {
+      font-family: $mainFont;
+      line-height: 54px;
+    }
+
+    .rankClck {
+      all: unset;
+      height: fit-content;
+      aspect-ratio: 1 / 1;
+      height: 36px;
+      margin-left: 1rem;
     }
   }
 
@@ -4146,6 +4168,8 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
 }
 
 .setBodH[style="display:inline-block;padding-top:10px;vertical-align:top;width:680px;margin-left:15px;margin-top:0px;"] {
+  width: 74% !important;
+  padding-right: 0 !important;
   .settName[style="width:100%;margin-top:0px"],
   .settName[style="width:100%"] {
     a {
@@ -4169,7 +4193,7 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
 .xpBar {
   height: 20px !important;
   border-radius: 100px !important;
-  width: 96% !important;
+  width: 98% !important;
   background: var(--subBgST);
 
   .xpBarB {
@@ -4274,6 +4298,42 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
         letter-spacing: 2px !important;
         font-size: 1.4rem !important;
       }
+    }
+  }
+}
+
+// UPdate
+// Stats
+#statHolder {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1.2rem;
+  width: 99%;
+  margin-top: 3rem;
+
+  .pSt {
+    text-shadow: unset !important;
+    margin: 0 !important;
+    width: 100% !important;
+    height: 7rem;
+    display: grid;
+    place-content: center;
+    gap: 0.5rem;
+    border-color: transparent !important;
+    background: $subBgST !important;
+    font-family: $mainFont !important;
+    font-size: 1.1rem !important;
+    padding: 0 !important;
+    letter-spacing: 1px;
+    transition: filter 280ms;
+
+    &:hover {
+      filter: brightness(1.2);
+    }
+
+    strong {
+      font-family: $subFont !important;
+      font-size: 1.6rem !important;
     }
   }
 }
