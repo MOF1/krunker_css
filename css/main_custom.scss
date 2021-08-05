@@ -1220,19 +1220,6 @@ input[type="checkbox"]:checked + .slider2:before {
 //   }
 // }
 
-// .accountButton {
-//   font-size: 28px;
-//   color: $accentColor !important;
-//   font-family: $mainFont;
-//   background: $subBgM !important;
-//   transition: color 280ms, background 280ms;
-// }
-
-// .accountButton:hover {
-//   color: $subBgM !important;
-//   background: $accentColor !important;
-// }
-
 // .healthBarSeg {
 //   width: 50px;
 //   display: inline-block;
@@ -2757,7 +2744,9 @@ input[type="checkbox"]:checked + .slider2:before {
   }
 }
 
-.setHed {
+.setHed,
+// Account Settings
+.setHedS {
   border: unset;
   background: transparent;
   font-family: $mainFont !important;
@@ -2794,21 +2783,24 @@ input[type="checkbox"]:checked + .slider2:before {
   padding-bottom: unset;
   background: transparent;
 
-  .settName {
-    font-family: $subFont !important;
-    color: $c_white !important;
-    font-size: 1.6rem;
-    border-bottom: none;
-    background: transparent;
-    margin-bottom: 2rem;
-    padding: 4px 0px;
-    //background: $subBgST !important;
-    background: transparent !important;
+  // padding: 0;
+  // width: 99%;
+}
 
-    span {
-      height: fit-content;
-      font-size: medium;
-    }
+.settName {
+  font-family: $subFont !important;
+  color: $c_white !important;
+  font-size: 1.6rem;
+  border-bottom: none;
+  background: transparent;
+  margin-bottom: 2rem;
+  padding: 4px 0px;
+  //background: $subBgST !important;
+  background: transparent !important;
+
+  span {
+    height: fit-content;
+    font-size: medium;
   }
 }
 
@@ -4105,6 +4097,8 @@ $blurBg: #ffffff1f;
   font-size: 1.4rem !important;
   padding: 1.7rem 3rem !important;
   font-size: 1.7rem !important;
+  margin: 1rem 1.5rem !important;
+  width: 94%;
 
   &::placeholder {
     font-size: 1.7rem !important;
@@ -4361,6 +4355,8 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
   border-color: transparent !important;
   font-family: var(--subFont);
   font-size: 1.4rem !important;
+  padding: 1rem;
+  width: 95%;
 }
 
 #friendList {
@@ -4413,4 +4409,30 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
       }
     }
   }
+}
+
+// Account Settings
+
+// Join Game
+#gameURL {
+  margin-bottom: 1rem !important;
+}
+
+.accountButton {
+  font-size: 28px;
+  color: $accentColor !important;
+  background: $subBgST !important;
+  font-family: $mainFont;
+  padding: 0.8rem 0rem !important;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 100px;
+  width: 29% !important;
+  float: right;
+  transition: color 280ms, background 280ms;
+}
+
+.accountButton:hover {
+  color: $subBgM !important;
+  background: $accentColor !important;
 }

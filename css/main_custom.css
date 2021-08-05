@@ -1324,7 +1324,8 @@ input[type="checkbox"]:checked + .slider2:before {
   border-bottom: 5px solid var(--accentColor) !important;
 }
 
-.setHed {
+.setHed,
+.setHedS {
   border: unset;
   background: transparent;
   font-family: var(--mainFont) !important;
@@ -1339,21 +1340,25 @@ input[type="checkbox"]:checked + .slider2:before {
   cursor: pointer;
 }
 
-.setHed:hover {
+.setHed:hover,
+.setHedS:hover {
   background: var(--subBg) !important;
 }
 
-.setHed span {
+.setHed span,
+.setHedS span {
   color: var(--c_white);
 }
 
-.setHed #requiresRestart {
+.setHed #requiresRestart,
+.setHedS #requiresRestart {
   font-family: var(--subFont) !important;
   color: var(--c_whiteST) !important;
   font-size: 1.5rem;
 }
 
-.setHed #requiresRestart span {
+.setHed #requiresRestart span,
+.setHedS #requiresRestart span {
   font-size: 15px;
 }
 
@@ -1364,7 +1369,7 @@ input[type="checkbox"]:checked + .slider2:before {
   background: transparent;
 }
 
-.setBodH .settName {
+.settName {
   font-family: var(--subFont) !important;
   color: var(--c_white) !important;
   font-size: 1.6rem;
@@ -1375,7 +1380,7 @@ input[type="checkbox"]:checked + .slider2:before {
   background: transparent !important;
 }
 
-.setBodH .settName span {
+.settName span {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -2782,6 +2787,8 @@ input[type="checkbox"]:checked + .slider2:before {
   font-size: 1.4rem !important;
   padding: 1.7rem 3rem !important;
   font-size: 1.7rem !important;
+  margin: 1rem 1.5rem !important;
+  width: 94%;
 }
 
 #accName::-webkit-input-placeholder,
@@ -3037,6 +3044,8 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
   border-color: transparent !important;
   font-family: var(--subFont);
   font-size: 1.4rem !important;
+  padding: 1rem;
+  width: 95%;
 }
 
 #friendList > div {
@@ -3089,5 +3098,29 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
 
 #friendList > div > div .buttonG {
   color: var(--accentColor) !important;
+}
+
+#gameURL {
+  margin-bottom: 1rem !important;
+}
+
+.accountButton {
+  font-size: 28px;
+  color: var(--accentColor) !important;
+  background: var(--subBgST) !important;
+  font-family: var(--mainFont);
+  padding: 0.8rem 0rem !important;
+  cursor: pointer;
+  text-align: center;
+  border-radius: 100px;
+  width: 29% !important;
+  float: right;
+  -webkit-transition: color 280ms, background 280ms;
+  transition: color 280ms, background 280ms;
+}
+
+.accountButton:hover {
+  color: var(--subBgM) !important;
+  background: var(--accentColor) !important;
 }
 /*# sourceMappingURL=main_custom.css.map */
