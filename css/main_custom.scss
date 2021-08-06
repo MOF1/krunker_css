@@ -1788,6 +1788,7 @@ input[type="checkbox"]:checked + .slider2:before {
   grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   padding: 1rem;
+  height: calc(100% - 142px) !important;
 
   &::-webkit-scrollbar-track {
     background: $subBg !important;
@@ -2855,7 +2856,7 @@ $blurBg: #ffffff1f;
   .menuItem {
     $altGap: 5rem;
     all: unset;
-    display: flex;
+    display: grid;
     place-items: center;
     pointer-events: all;
     cursor: pointer;
@@ -2866,6 +2867,10 @@ $blurBg: #ffffff1f;
     filter: brightness(10);
     transition: transform 500ms ease;
     margin-bottom: 0;
+
+    & > span {
+      filter: saturate(0);
+    }
 
     &:hover {
       transform: scale(1.2);
@@ -3362,6 +3367,7 @@ $blurBg: #ffffff1f;
   font-size: 20px;
   padding-right: 5px;
   background: transparent !important;
+  max-width: 265px;
   span {
     font-family: $subFont;
     font-size: 22px;

@@ -602,6 +602,7 @@ input[type="checkbox"]:checked + .slider2:before {
       grid-template-columns: 1fr 1fr 1fr;
   gap: 20px;
   padding: 1rem;
+  height: calc(100% - 142px) !important;
 }
 
 #skinList::-webkit-scrollbar-track {
@@ -1441,9 +1442,8 @@ input[type="checkbox"]:checked + .slider2:before {
 
 #menuItemContainer .menuItem {
   all: unset;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: -ms-grid;
+  display: grid;
   place-items: center;
   pointer-events: all;
   cursor: pointer;
@@ -1457,6 +1457,11 @@ input[type="checkbox"]:checked + .slider2:before {
   transition: transform 500ms ease;
   transition: transform 500ms ease, -webkit-transform 500ms ease;
   margin-bottom: 0;
+}
+
+#menuItemContainer .menuItem > span {
+  -webkit-filter: saturate(0);
+          filter: saturate(0);
 }
 
 #menuItemContainer .menuItem:hover {
@@ -2019,6 +2024,7 @@ input[type="checkbox"]:checked + .slider2:before {
   font-size: 20px;
   padding-right: 5px;
   background: transparent !important;
+  max-width: 265px;
 }
 
 .chatItem span {
