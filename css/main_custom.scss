@@ -4442,3 +4442,111 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
   color: $subBgM !important;
   background: $accentColor !important;
 }
+
+// Inbox
+#menuWindow[style="overflow-y: auto; width: 1000px; max-height: calc(100% - 480px); top: 50%; transform: translate(-50%, -50%);"] {
+  & > div:first-child {
+    font-family: $mainFont;
+    font-size: 30px;
+
+    .button {
+      background: var(--subBgST) !important;
+      padding: 0.6rem 1rem !important;
+      letter-spacing: 1px !important;
+      font-size: 21px !important;
+      color: var(--l-accentColor) !important;
+    }
+  }
+}
+
+.mailObj {
+  border-color: transparent !important;
+  background: var(--subBgST) !important;
+  padding: 1.8rem 1rem !important;
+  font-family: var(--mainFont) !important;
+
+  .followFrom {
+    font-family: var(--subFont);
+    font-size: 26px;
+    a {
+      font-family: var(--main_font);
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+  }
+}
+
+.mailDate {
+  font-family: var(--subFont);
+  font-size: 1.4rem;
+}
+
+.mailFrom {
+  border-color: var(--subBgST);
+  font-family: var(--mainFont);
+  font-size: 1.7rem;
+}
+
+.mailSubj {
+  font-family: var(--subFont);
+  font-size: 1.3rem !important;
+}
+
+.mailText {
+  background: var(--subBgST);
+  font-family: var(--subFont);
+  font-size: 1.3rem;
+
+  a {
+    font-family: var(--main_font);
+    letter-spacing: 1px;
+    font-weight: 600;
+  }
+}
+
+.followBack {
+  border-color: transparent !important;
+  background: var(--subBgST) !important;
+  padding: 0.5rem 1rem !important;
+  font-family: var(--subFont);
+  font-size: 1.2rem !important;
+  color: var(--accentColor) !important;
+
+  &:hover {
+    color: $primaryBg !important;
+    border-color: transparent !important;
+    background: var(--accentColor) !important;
+  }
+}
+
+// In Game UI Player list tab
+.pListTable {
+  background: $subBgST !important;
+
+  * {
+    font-family: $subFont;
+    font-size: 1.3rem;
+  }
+  tr {
+    border-color: transparent;
+    margin-bottom: 1rem;
+
+    &:hover {
+      background: $subBgST !important;
+    }
+  }
+  .pListName {
+    span[style="color:#353535"] {
+      color: $c_white !important;
+    }
+  }
+
+  .pListActions {
+  }
+}
+
+.setHed[style="margin-top:0px"] {
+  & > div {
+    font-family: $mainFont !important;
+  }
+}

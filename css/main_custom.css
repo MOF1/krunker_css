@@ -3129,4 +3129,104 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
   color: var(--subBgM) !important;
   background: var(--accentColor) !important;
 }
+
+#menuWindow[style="overflow-y: auto; width: 1000px; max-height: calc(100% - 480px); top: 50%; transform: translate(-50%, -50%);"] > div:first-child {
+  font-family: var(--mainFont);
+  font-size: 30px;
+}
+
+#menuWindow[style="overflow-y: auto; width: 1000px; max-height: calc(100% - 480px); top: 50%; transform: translate(-50%, -50%);"] > div:first-child .button {
+  background: var(--subBgST) !important;
+  padding: 0.6rem 1rem !important;
+  letter-spacing: 1px !important;
+  font-size: 21px !important;
+  color: var(--l-accentColor) !important;
+}
+
+.mailObj {
+  border-color: transparent !important;
+  background: var(--subBgST) !important;
+  padding: 1.8rem 1rem !important;
+  font-family: var(--mainFont) !important;
+}
+
+.mailObj .followFrom {
+  font-family: var(--subFont);
+  font-size: 26px;
+}
+
+.mailObj .followFrom a {
+  font-family: var(--main_font);
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.mailDate {
+  font-family: var(--subFont);
+  font-size: 1.4rem;
+}
+
+.mailFrom {
+  border-color: var(--subBgST);
+  font-family: var(--mainFont);
+  font-size: 1.7rem;
+}
+
+.mailSubj {
+  font-family: var(--subFont);
+  font-size: 1.3rem !important;
+}
+
+.mailText {
+  background: var(--subBgST);
+  font-family: var(--subFont);
+  font-size: 1.3rem;
+}
+
+.mailText a {
+  font-family: var(--main_font);
+  letter-spacing: 1px;
+  font-weight: 600;
+}
+
+.followBack {
+  border-color: transparent !important;
+  background: var(--subBgST) !important;
+  padding: 0.5rem 1rem !important;
+  font-family: var(--subFont);
+  font-size: 1.2rem !important;
+  color: var(--accentColor) !important;
+}
+
+.followBack:hover {
+  color: var(--primaryBg) !important;
+  border-color: transparent !important;
+  background: var(--accentColor) !important;
+}
+
+.pListTable {
+  background: var(--subBgST) !important;
+}
+
+.pListTable * {
+  font-family: var(--subFont);
+  font-size: 1.3rem;
+}
+
+.pListTable tr {
+  border-color: transparent;
+  margin-bottom: 1rem;
+}
+
+.pListTable tr:hover {
+  background: var(--subBgST) !important;
+}
+
+.pListTable .pListName span[style="color:#353535"] {
+  color: var(--c_white) !important;
+}
+
+.setHed[style="margin-top:0px"] > div {
+  font-family: var(--mainFont) !important;
+}
 /*# sourceMappingURL=main_custom.css.map */
