@@ -2157,6 +2157,10 @@ input[type="checkbox"]:checked + .slider2:before {
       text-shadow: none !important;
     }
 
+    .selRandom {
+      font-family: var(--mainFont);
+    }
+
     .settName {
       top: 0;
       left: 0;
@@ -3169,6 +3173,7 @@ $blurBg: #ffffff1f;
   top: unset;
   right: -45px;
   background-color: $primaryBg;
+  pointer-events: all;
 
   display: flex;
   flex-direction: column;
@@ -3267,10 +3272,10 @@ $blurBg: #ffffff1f;
     }
 
     #customizeButton:hover {
-      color: $yellow;
+      color: $accentColor !important;
       transform: unset;
       span {
-        color: $yellow !important;
+        color: $accentColor !important;
       }
     }
   }
