@@ -3156,6 +3156,12 @@ $blurBg: #ffffff1f;
   font-size: 2rem !important;
 }
 
+.buttonD,
+.buttonD:hover {
+  background-color: transparent !important;
+  box-shadow: unset !important;
+}
+
 #menuClassContainer {
   height: 200px;
   width: 500px;

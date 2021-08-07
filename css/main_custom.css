@@ -1781,6 +1781,13 @@ input[type="checkbox"]:checked + .slider2:before {
   font-size: 2rem !important;
 }
 
+.buttonD,
+.buttonD:hover {
+  background-color: transparent !important;
+  -webkit-box-shadow: unset !important;
+          box-shadow: unset !important;
+}
+
 #menuClassContainer {
   height: 200px;
   width: 500px;
