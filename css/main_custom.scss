@@ -4561,3 +4561,21 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
     font-family: $mainFont !important;
   }
 }
+
+// Privacy Cookies button
+#ot-sdk-btn-floating {
+  top: unset;
+  bottom: 175px !important;
+  right: 329px !important;
+  left: unset;
+  transform: scale(0.95);
+
+  .ot-floating-button__front {
+    background-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  .ot-floating-button__back {
+    background: transparent !important;
+  }
+}

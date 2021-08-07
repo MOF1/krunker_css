@@ -3241,4 +3241,23 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
 .setHed[style="margin-top:0px"] > div {
   font-family: var(--mainFont) !important;
 }
+
+#ot-sdk-btn-floating {
+  top: unset;
+  bottom: 175px !important;
+  right: 329px !important;
+  left: unset;
+  -webkit-transform: scale(0.95);
+          transform: scale(0.95);
+}
+
+#ot-sdk-btn-floating .ot-floating-button__front {
+  background-color: transparent !important;
+  -webkit-box-shadow: none !important;
+          box-shadow: none !important;
+}
+
+#ot-sdk-btn-floating .ot-floating-button__back {
+  background: transparent !important;
+}
 /*# sourceMappingURL=main_custom.css.map */
