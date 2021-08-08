@@ -3623,15 +3623,25 @@ $blurBg: #ffffff1f;
 }
 
 #bottomRight {
-  background: $subBgST;
+  //background: $subBgST;
   width: 304px;
   border-radius: 7px;
   #ammoDisplay {
-    background: transparent !important;
+    //background: transparent !important;
     display: flex !important;
     flex-direction: row;
     align-items: flex-end;
     justify-content: flex-end;
+
+    background-color: $subBgST !important;
+    background-image: linear-gradient(
+      to right,
+      var(--subBgST),
+      var(--subBgST)
+    ) !important;
+    border-radius: 10px;
+    width: 290px;
+    height: 90px;
 
     #ammoVal {
       font-family: $mainFont !important;
@@ -3645,7 +3655,7 @@ $blurBg: #ffffff1f;
       font-size: 28px !important;
       color: $c_whiteST !important;
       margin-bottom: 2rem;
-      margin-right: 3rem;
+      margin-right: 2.2rem;
       letter-spacing: 1px !important;
     }
     #ammoIcon {

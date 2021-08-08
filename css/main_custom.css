@@ -2309,13 +2309,11 @@ input[type="checkbox"]:checked + .slider2:before {
 }
 
 #bottomRight {
-  background: var(--subBgST);
   width: 304px;
   border-radius: 7px;
 }
 
 #bottomRight #ammoDisplay {
-  background: transparent !important;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
@@ -2329,6 +2327,12 @@ input[type="checkbox"]:checked + .slider2:before {
   -webkit-box-pack: end;
       -ms-flex-pack: end;
           justify-content: flex-end;
+  background-color: var(--subBgST) !important;
+  background-image: -webkit-gradient(linear, left top, right top, from(var(--subBgST)), to(var(--subBgST))) !important;
+  background-image: linear-gradient(to right, var(--subBgST), var(--subBgST)) !important;
+  border-radius: 10px;
+  width: 290px;
+  height: 90px;
 }
 
 #bottomRight #ammoDisplay #ammoVal {
@@ -2344,7 +2348,7 @@ input[type="checkbox"]:checked + .slider2:before {
   font-size: 28px !important;
   color: var(--c_whiteST) !important;
   margin-bottom: 2rem;
-  margin-right: 3rem;
+  margin-right: 2.2rem;
   letter-spacing: 1px !important;
 }
 
