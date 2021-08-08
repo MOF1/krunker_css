@@ -2519,6 +2519,48 @@ input[type="checkbox"]:checked + .slider2:before {
   display: none !important;
 }
 
+.mapListItem {
+  background: var(--subBgST) !important;
+  width: 308px !important;
+  border-radius: 7px;
+}
+
+.mapListThumb {
+  width: 95%;
+  border-radius: 12px;
+  position: absolute;
+  left: 50%;
+  top: 75px;
+  right: unset;
+  bottom: unset;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  background: transparent;
+}
+
+.mapActionOvrl {
+  width: 95%;
+  border-radius: 12px;
+  position: absolute;
+  left: 50%;
+  top: 75px;
+  right: unset;
+  bottom: unset;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 75%;
+}
+
+.mapActionB.sel {
+  position: absolute;
+  top: 35px !important;
+  bottom: unset !important;
+  left: 95px;
+  right: unset;
+  -webkit-transform: scale(0.7);
+          transform: scale(0.7);
+}
+
 .serverHeader {
   background-color: var(--primaryBg);
 }
