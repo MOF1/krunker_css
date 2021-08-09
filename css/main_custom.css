@@ -1672,8 +1672,8 @@ input[type="checkbox"]:checked + .slider2:before {
 #signedInHeaderBar #menuLvlHold {
   display: block;
   position: absolute;
-  width: 133vw;
-  left: -33px;
+  width: 100%;
+  left: 0;
   height: 4px;
   bottom: -6px;
   background: transparent;
