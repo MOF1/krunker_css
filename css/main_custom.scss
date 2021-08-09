@@ -4691,14 +4691,9 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
     color: transparent !important;
     height: 120px;
 
-    &::before {
-      position: absolute;
-      content: "";
-      inset: 0;
-      background-image: url("../img/spinner.svg");
-      background-repeat: no-repeat;
-      background-position: center;
-    }
+    background-image: url("../img/spinner.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   #loadTipsHolder {

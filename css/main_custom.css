@@ -3371,12 +3371,6 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
   right: 0;
   color: transparent !important;
   height: 120px;
-}
-
-#initLoader #loadGamNm::before {
-  position: absolute;
-  content: "";
-  inset: 0;
   background-image: url("../img/spinner.svg");
   background-repeat: no-repeat;
   background-position: center;
