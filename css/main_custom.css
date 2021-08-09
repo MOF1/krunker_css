@@ -3347,4 +3347,58 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
 #ot-sdk-btn-floating .ot-floating-button__back {
   background: transparent !important;
 }
+
+#initLoader {
+  background-color: var(--primaryBg);
+}
+
+#initLoader > *:first-child {
+  display: none !important;
+}
+
+#initLoader #loadHeader {
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 153px;
+}
+
+#initLoader #loadGamNm {
+  left: 0;
+  -webkit-transform: unset;
+          transform: unset;
+  right: 0;
+  color: transparent !important;
+  height: 120px;
+}
+
+#initLoader #loadGamNm::before {
+  position: absolute;
+  content: "";
+  inset: 0;
+  background-image: url("../img/spinner.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+#initLoader #loadTipsHolder {
+  bottom: 6%;
+  left: 0;
+  right: 0;
+  -webkit-transform: unset;
+          transform: unset;
+  width: calc(100% - 6rem);
+  padding: 0rem 3rem;
+  font-family: var(--subFont);
+  font-size: 22px;
+  letter-spacing: 1px;
+  opacity: 0.7;
+}
+
+#initLoader #loadEditrBtn,
+#initLoader #loadInfoRHolder,
+#initLoader #loadInfoLHolder {
+  display: none;
+}
 /*# sourceMappingURL=main_custom.css.map */
