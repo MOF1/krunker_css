@@ -2334,6 +2334,48 @@ input[type="checkbox"]:checked + .slider2:before {
           transform: translate(-120px, -40px) scale(1.6);
 }
 
+@-webkit-keyframes breathe {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes breathe {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+#reloadMsg {
+  position: absolute;
+  left: unset;
+  top: unset;
+  bottom: 130px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-family: var(--mainFont);
+}
+
+#reloadMsg::after {
+  -webkit-animation: breathe 1s infinite alternate;
+          animation: breathe 1s infinite alternate;
+  content: "report_problem";
+  font-size: 40px;
+  font-family: "Material Icons";
+  position: absolute;
+  left: unset;
+  top: unset;
+  bottom: 5.5px;
+  right: 10px;
+}
+
 #bottomRight {
   width: 304px;
   border-radius: 7px;
@@ -2359,6 +2401,8 @@ input[type="checkbox"]:checked + .slider2:before {
   border-radius: 10px;
   width: 290px;
   height: 90px;
+  -webkit-transform: translateY(5px);
+          transform: translateY(5px);
 }
 
 #bottomRight #ammoDisplay #ammoVal {

@@ -3645,6 +3645,38 @@ $blurBg: #ffffff1f;
   }
 }
 
+// Reload msg :: Credit - AcidEyezZz#0007
+@keyframes breathe {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+#reloadMsg {
+  position: absolute;
+  left: unset;
+  top: unset;
+  bottom: 130px;
+  right: 20px;
+  background: transparent;
+  border: none;
+  font-family: var(--mainFont);
+}
+
+#reloadMsg::after {
+  animation: breathe 1s infinite alternate;
+  content: "report_problem";
+  font-size: 40px;
+  font-family: "Material Icons";
+  position: absolute;
+  left: unset;
+  top: unset;
+  bottom: 5.5px;
+  right: 10px;
+}
+
 #bottomRight {
   //background: $subBgST;
   width: 304px;
@@ -3665,6 +3697,7 @@ $blurBg: #ffffff1f;
     border-radius: 10px;
     width: 290px;
     height: 90px;
+    transform: translateY(5px);
 
     #ammoVal {
       font-family: $mainFont !important;
