@@ -2588,6 +2588,9 @@ input[type="checkbox"]:checked + .slider2:before {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   left: 50%;
   bottom: 0;
   -webkit-transform: translateX(-50%);
@@ -2601,8 +2604,16 @@ input[type="checkbox"]:checked + .slider2:before {
   padding: 0 !important;
   margin: 0;
   text-align: center;
-  display: -ms-grid;
-  display: grid;
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: flex-end;
   margin-right: 5rem;
 }
 
@@ -2621,14 +2632,20 @@ input[type="checkbox"]:checked + .slider2:before {
   font-size: 20px;
   color: var(--c_whiteST);
   text-align: left;
+  margin-bottom: 10px;
+  margin-left: 0.8rem;
 }
 
 .topRightCounters .countIcon:last-child {
   margin-right: 0px;
 }
 
+.topRightCounters .countIcon[style*="display: none;"] {
+  display: none !important;
+}
+
 .topRightCounters #scoreZoneCount::after {
-  content: "Score Zon";
+  content: "Score Zone";
 }
 
 .topRightCounters #livesCount::after {

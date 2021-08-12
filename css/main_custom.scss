@@ -3843,6 +3843,7 @@ $blurBg: #ffffff1f;
   position: fixed;
   display: flex;
   flex-direction: row;
+  align-items: center;
   left: 50%;
   bottom: 0;
   transform: translateX(-50%);
@@ -3857,7 +3858,10 @@ $blurBg: #ffffff1f;
     //width: 100%;
     //aspect-ratio: 1 / 1;
     text-align: center;
-    display: grid;
+    // display: grid;
+    display: flex !important;
+    flex-direction: row;
+    align-items: flex-end;
     margin-right: 5rem;
 
     img,
@@ -3875,6 +3879,8 @@ $blurBg: #ffffff1f;
       font-size: 20px;
       color: var(--c_whiteST);
       text-align: left;
+      margin-bottom: 10px;
+      margin-left: 0.8rem;
     }
   }
 
@@ -3882,8 +3888,12 @@ $blurBg: #ffffff1f;
     margin-right: 0px;
   }
 
+  .countIcon[style*="display: none;"] {
+    display: none !important;
+  }
+
   #scoreZoneCount::after {
-    content: "Score Zon";
+    content: "Score Zone";
   }
 
   #livesCount::after {
