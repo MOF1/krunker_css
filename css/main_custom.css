@@ -217,7 +217,7 @@ input[type="color"] {
   width: 400px !important;
 }
 
-.setSugBox {
+.setSugBox2 {
   height: 8rem;
   border-color: transparent;
   display: -ms-inline-grid;
@@ -227,35 +227,35 @@ input[type="color"] {
   font-size: 1.7rem;
 }
 
-.setSugBox:nth-child(1) {
+.setSugBox2:nth-child(1) {
   background: var(--accentColorST);
   color: var(--accentColor) !important;
 }
 
-.setSugBox:nth-child(2) {
+.setSugBox2:nth-child(2) {
   background: var(--orange-dark);
   color: var(--orange) !important;
 }
 
-.setSugBox:nth-child(3) {
+.setSugBox2:nth-child(3) {
   background: var(--purple-dark);
   color: var(--purple) !important;
 }
 
-.setSugBox:nth-child(4) {
+.setSugBox2:nth-child(4) {
   background: var(--yellow-dark);
   color: var(--yellow) !important;
 }
 
-.setSugBox:hover {
+.setSugBox2:hover {
   border-color: transparent;
 }
 
-.setSugBox .segSugIH {
+.setSugBox2 .segSugIH {
   height: 8rem;
 }
 
-.setSugBox .segSugIH .setSugInf {
+.setSugBox2 .segSugIH .setSugInf {
   font-family: var(--subFont) !important;
   font-size: 1.7rem !important;
 }
@@ -946,7 +946,7 @@ input[type="checkbox"]:checked + .slider2:before {
 }
 
 #customizeContainer #loadoutHolder span #loadoutName {
-  width: 100% !important;
+  width: 153px !important;
   margin: 0 !important;
   padding: 1rem 1.5rem !important;
   border-radius: 100px !important;
@@ -972,6 +972,8 @@ input[type="checkbox"]:checked + .slider2:before {
   min-width: 10px !important;
   margin: 0rem 1rem !important;
   cursor: pointer !important;
+  font-size: 1.4rem !important;
+  letter-spacing: 2px !important;
 }
 
 #customizeContainer #loadoutHolder span .loadoutBtn {
@@ -1044,6 +1046,7 @@ input[type="checkbox"]:checked + .slider2:before {
 
 .hostMap {
   border: 0;
+  width: 283px;
 }
 
 .hostMap .blackShad {
@@ -1061,14 +1064,14 @@ input[type="checkbox"]:checked + .slider2:before {
   position: absolute;
   top: 50%;
   left: 50%;
-  -webkit-transform: translate(-45%, -50%);
-          transform: translate(-45%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
   font-size: 20px;
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--c_white) !important;
-  height: 90px;
-  width: 223px;
+  height: 120px;
+  width: 269px;
   line-height: 28px;
   padding-right: 0px;
   z-index: 69;
@@ -2830,6 +2833,54 @@ input[type="checkbox"]:checked + .slider2:before {
 .hostHeader {
   font-family: var(--mainFont);
   font-size: 2.5rem;
+  background: var(--primaryBg) !important;
+}
+
+.mapListCat {
+  font-family: var(--mainFont);
+  color: var(--accentColor) !important;
+  -webkit-transform: translateX(-10px);
+          transform: translateX(-10px);
+  background: transparent;
+  letter-spacing: 1px;
+}
+
+#hostCMapPickT {
+  font-family: var(--mainFont);
+  letter-spacing: 2px;
+  font-size: 3rem !important;
+}
+
+#startServBtn {
+  border: 10px solid var(--primaryBg);
+  color: var(--primaryBg) !important;
+  border-radius: 6px;
+  padding: 13px 0px !important;
+  -webkit-transition: -webkit-transform 400ms;
+  transition: -webkit-transform 400ms;
+  transition: transform 400ms;
+  transition: transform 400ms, -webkit-transform 400ms;
+}
+
+#startServBtn:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+#hostGameMsg span {
+  font-family: var(--mainFont);
+  font-size: 1.5rem;
+}
+
+#stickyHostH {
+  border: transparent;
+  background: var(--primaryBg);
+  font-family: var(--subFont);
+  font-size: 1.5rem;
+}
+
+#stickyHostH span {
+  font-family: var(--mainFont);
 }
 
 .serverHostOp {
@@ -2944,6 +2995,7 @@ input[type="checkbox"]:checked + .slider2:before {
   background-color: transparent;
   border-color: transparent;
   height: 3rem;
+  width: 208.4px;
 }
 
 .hostOpt .optName {
@@ -3086,6 +3138,10 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
   color: var(--c_whiteST) !important;
 }
 
+.bigMenTabs .bigMenTabDis {
+  opacity: 0.4;
+}
+
 .bigMenTabs .bigMenTabA {
   color: var(--c_white) !important;
   border-bottom: 5px solid var(--accentColor) !important;
@@ -3108,6 +3164,12 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
 }
 
 .setBodH .settName .floatR {
+  font-family: var(--mainFont);
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+}
+
+.setBodH .settName .floatR span {
   font-family: var(--mainFont);
   letter-spacing: 1px;
   font-size: 1.8rem;
@@ -3329,7 +3391,8 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
   margin-bottom: 1rem !important;
 }
 
-.accountButton {
+.accountButton,
+.joinBtn {
   font-size: 28px;
   color: var(--accentColor) !important;
   background: var(--subBgST) !important;
@@ -3344,7 +3407,8 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
   transition: color 280ms, background 280ms;
 }
 
-.accountButton:hover {
+.accountButton:hover,
+.joinBtn:hover {
   color: var(--subBgM) !important;
   background: var(--accentColor) !important;
 }

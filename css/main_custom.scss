@@ -217,7 +217,7 @@ input[type="color"] {
   width: 400px !important;
 }
 
-.setSugBox {
+.setSugBox2 {
   height: 8rem;
   border-color: transparent;
   display: inline-grid;
@@ -2079,7 +2079,7 @@ input[type="checkbox"]:checked + .slider2:before {
 
       //Input
       #loadoutName {
-        width: 100% !important;
+        width: 153px !important;
         margin: 0 !important;
         padding: 1rem 1.5rem !important;
         border-radius: 100px !important;
@@ -2101,6 +2101,8 @@ input[type="checkbox"]:checked + .slider2:before {
         min-width: 10px !important;
         margin: 0rem 1rem !important;
         cursor: pointer !important;
+        font-size: 1.4rem !important;
+        letter-spacing: 2px !important;
       }
 
       .loadoutBtn {
@@ -2330,6 +2332,7 @@ input[type="checkbox"]:checked + .slider2:before {
 
 .hostMap {
   border: 0;
+  width: 283px;
   .blackShad {
     text-shadow: none;
   }
@@ -2344,13 +2347,13 @@ input[type="checkbox"]:checked + .slider2:before {
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-45%, -50%);
+    transform: translate(-50%, -50%);
     font-size: 20px;
     letter-spacing: 2px;
     text-transform: uppercase;
     color: $c_white !important;
-    height: 90px;
-    width: 223px;
+    height: 120px;
+    width: 269px;
     line-height: 28px;
     padding-right: 0px;
     z-index: 69;
@@ -4131,6 +4134,52 @@ $blurBg: #ffffff1f;
 .hostHeader {
   font-family: var(--mainFont);
   font-size: 2.5rem;
+  background: $primaryBg !important;
+}
+
+.mapListCat {
+  font-family: var(--mainFont);
+  color: var(--accentColor) !important;
+  transform: translateX(-10px);
+  background: transparent;
+  letter-spacing: 1px;
+}
+
+#hostCMapPickT {
+  font-family: var(--mainFont);
+  letter-spacing: 2px;
+  font-size: 3rem !important;
+}
+
+#startServBtn {
+  border: 10px solid var(--primaryBg);
+  color: var(--primaryBg) !important;
+  border-radius: 6px;
+  padding: 13px 0px !important;
+
+  transition: transform 400ms;
+
+  &:hover {
+    transform: scale(0.9);
+  }
+}
+
+#hostGameMsg {
+  span {
+    font-family: $mainFont;
+    font-size: 1.5rem;
+  }
+}
+
+#stickyHostH {
+  border: transparent;
+  background: var(--primaryBg);
+  font-family: var(--subFont);
+  font-size: 1.5rem;
+
+  span {
+    font-family: var(--mainFont);
+  }
 }
 
 .serverHostOp {
@@ -4245,6 +4294,7 @@ $blurBg: #ffffff1f;
   background-color: transparent;
   border-color: transparent;
   height: 3rem;
+  width: 208.4px;
 
   .optName {
     position: absolute;
@@ -4364,6 +4414,10 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
     color: $c_whiteST !important;
   }
 
+  .bigMenTabDis {
+    opacity: 0.4;
+  }
+
   .bigMenTabA {
     color: $c_white !important;
     border-bottom: 5px solid $accentColor !important;
@@ -4393,6 +4447,11 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
       font-family: var(--mainFont);
       letter-spacing: 1px;
       font-size: 1.8rem;
+      span {
+        font-family: var(--mainFont);
+        letter-spacing: 1px;
+        font-size: 1.8rem;
+      }
     }
   }
 }
@@ -4631,7 +4690,8 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
   margin-bottom: 1rem !important;
 }
 
-.accountButton {
+.accountButton,
+.joinBtn {
   font-size: 28px;
   color: $accentColor !important;
   background: $subBgST !important;
@@ -4645,7 +4705,8 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
   transition: color 280ms, background 280ms;
 }
 
-.accountButton:hover {
+.accountButton:hover,
+.joinBtn:hover {
   color: $subBgM !important;
   background: $accentColor !important;
 }
