@@ -916,9 +916,12 @@ input[type="checkbox"]:checked + .slider2:before {
           filter: brightness(1.1);
 }
 
-#menuWindow
-[style="overflow-y: auto;width: 940px;max-height: calc(100% - 480px);top: 50%;transform: translate(-50%, -50%);"] {
+#menuWindow[style="overflow-y: auto;width: 940px;max-height: calc(100% - 480px);top: 50%;transform: translate(-50%, -50%);"] {
   width: 900px !important;
+}
+
+#customizeContainer {
+  min-height: 600px;
 }
 
 #customizeContainer .settName {
@@ -1765,8 +1768,8 @@ input[type="checkbox"]:checked + .slider2:before {
   font-size: 2rem;
 }
 
-#headerRight #menuServerInfoContainer #menuPingDisplay #menuPingIcon[style="color: gray"] {
-  color: var(--dirty-light);
+#headerRight #menuServerInfoContainer #menuPingDisplay #menuPingIcon[style*="color: gray"] {
+  color: var(--dirty-light) !important;
 }
 
 #headerRight #menuServerInfoContainer #menuPingDisplay #menuPingText {

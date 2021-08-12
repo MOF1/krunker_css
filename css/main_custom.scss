@@ -2058,11 +2058,11 @@ input[type="checkbox"]:checked + .slider2:before {
 }
 
 //Loadout
-#menuWindow
-  [style="overflow-y: auto;width: 940px;max-height: calc(100% - 480px);top: 50%;transform: translate(-50%, -50%);"] {
+#menuWindow[style="overflow-y: auto;width: 940px;max-height: calc(100% - 480px);top: 50%;transform: translate(-50%, -50%);"] {
   width: 900px !important;
 }
 #customizeContainer {
+  min-height: 600px;
   .settName {
     border: none;
     font-family: var(--subFont);
@@ -3135,8 +3135,8 @@ $blurBg: #ffffff1f;
         font-size: 2rem;
       }
 
-      #menuPingIcon[style="color: gray"] {
-        color: $dirty-light;
+      #menuPingIcon[style*="color: gray"] {
+        color: $dirty-light !important;
       }
 
       #menuPingText {
