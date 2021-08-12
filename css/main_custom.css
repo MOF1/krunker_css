@@ -2573,6 +2573,82 @@ input[type="checkbox"]:checked + .slider2:before {
   width: 200px;
 }
 
+.topRightCounters {
+  position: fixed;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  left: 50%;
+  bottom: 0;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  margin-bottom: 50px;
+}
+
+.topRightCounters .countIcon {
+  background: transparent;
+  font-size: 2.8rem !important;
+  padding: 0 !important;
+  margin: 0;
+  text-align: center;
+  display: -ms-grid;
+  display: grid;
+  margin-right: 5rem;
+}
+
+.topRightCounters .countIcon img,
+.topRightCounters .countIcon i {
+  display: none;
+}
+
+.topRightCounters .countIcon span {
+  font-family: var(--mainFont);
+  letter-spacing: 1px;
+}
+
+.topRightCounters .countIcon::after {
+  font-family: var(--subFont);
+  font-size: 20px;
+  color: var(--c_whiteST);
+  text-align: left;
+}
+
+.topRightCounters .countIcon:last-child {
+  margin-right: 0px;
+}
+
+.topRightCounters #scoreZoneCount::after {
+  content: "Score Zon";
+}
+
+.topRightCounters #livesCount::after {
+  content: "Lives";
+}
+
+.topRightCounters #killCount::after {
+  content: "Kills";
+}
+
+.topRightCounters #deathCount::after {
+  content: "Deaths";
+}
+
+.topRightCounters #streakCount::after {
+  content: "Streak";
+}
+
+.topRightCounters #kdCount::after {
+  content: "K/D";
+}
+
+.topRightCounters #scoreCount::after {
+  content: "Score";
+}
+
 #endAHolderL,
 #endAHolderR {
   display: none !important;

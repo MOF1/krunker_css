@@ -3835,6 +3835,79 @@ $blurBg: #ffffff1f;
     }
   }
 }
+
+.topRightCounters {
+  position: fixed;
+  display: flex;
+  flex-direction: row;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  margin-bottom: 50px;
+
+  .countIcon {
+    background: transparent;
+    font-size: 2.8rem !important;
+    //background: var(--subBgST) !important;
+    padding: 0 !important;
+    margin: 0;
+    //width: 100%;
+    //aspect-ratio: 1 / 1;
+    text-align: center;
+    display: grid;
+    margin-right: 5rem;
+
+    img,
+    i {
+      display: none;
+    }
+
+    span {
+      font-family: $mainFont;
+      letter-spacing: 1px;
+    }
+
+    &::after {
+      font-family: var(--subFont);
+      font-size: 20px;
+      color: var(--c_whiteST);
+      text-align: left;
+    }
+  }
+
+  .countIcon:last-child {
+    margin-right: 0px;
+  }
+
+  #scoreZoneCount::after {
+    content: "Score Zon";
+  }
+
+  #livesCount::after {
+    content: "Lives";
+  }
+
+  #killCount::after {
+    content: "Kills";
+  }
+
+  #deathCount::after {
+    content: "Deaths";
+  }
+
+  #streakCount::after {
+    content: "Streak";
+  }
+
+  #kdCount::after {
+    content: "K/D";
+  }
+
+  #scoreCount::after {
+    content: "Score";
+  }
+}
+
 #endAHolderL,
 #endAHolderR {
   display: none !important;
