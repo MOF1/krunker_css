@@ -2596,6 +2596,9 @@ input[type="checkbox"]:checked + .slider2:before {
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
   margin-bottom: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .topRightCounters .countIcon {
