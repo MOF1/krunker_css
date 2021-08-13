@@ -2706,48 +2706,6 @@ input[type="checkbox"]:checked + .slider2:before {
   display: none !important;
 }
 
-.mapListItem {
-  background: var(--subBgST) !important;
-  width: 308px !important;
-  border-radius: 7px;
-}
-
-.mapListThumb {
-  width: 95%;
-  border-radius: 12px;
-  position: absolute;
-  left: 50%;
-  top: 75px;
-  right: unset;
-  bottom: unset;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  background: transparent;
-}
-
-.mapActionOvrl {
-  width: 95%;
-  border-radius: 12px;
-  position: absolute;
-  left: 50%;
-  top: 75px;
-  right: unset;
-  bottom: unset;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  height: 75%;
-}
-
-.mapActionB.sel {
-  position: absolute;
-  top: 35px !important;
-  bottom: unset !important;
-  left: 95px;
-  right: unset;
-  -webkit-transform: scale(0.7);
-          transform: scale(0.7);
-}
-
 .serverHeader {
   background-color: var(--primaryBg);
 }
@@ -3601,5 +3559,100 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
 #initLoader #loadInfoRHolder,
 #initLoader #loadInfoLHolder {
   display: none;
+}
+
+#bigMFeatName {
+  font-family: var(--mainFont);
+  font-size: 3rem;
+}
+
+#bigMFeatVbar {
+  font-size: 1.7rem;
+  font-family: var(--subFont);
+}
+
+#bigMFeatVbar > div {
+  display: none !important;
+}
+
+#bigMFeatHBtn {
+  all: unset;
+  position: absolute;
+  text-align: center;
+  cursor: pointer;
+  -webkit-transition: all 0.08s;
+  transition: all 0.08s;
+  font-family: var(--subFont);
+  font-size: 1.7rem;
+  padding: 0.4rem !important;
+}
+
+#bigMFeatHBtn span {
+  color: var(--accentColor) !important;
+  font-family: inherit;
+}
+
+#bigMFeatHBtn:hover {
+  border: unset !important;
+  -webkit-transform: unset !important;
+          transform: unset !important;
+}
+
+#bigMFeatHBtn:hover span {
+  text-decoration: underline;
+}
+
+#bigMFeatHBtn[onclick*="selectHostMap("] {
+  background: var(--subBgST);
+  color: white !important;
+  bottom: 8.5%;
+  right: 25%;
+  border-radius: 100px;
+  padding: 0.4rem 2rem !important;
+  border: 2px solid white !important;
+}
+
+#bigMFeatPBtn {
+  border: 3px solid var(--accentColor);
+  font-family: var(--mainFont);
+  font-size: 1.6rem;
+  border-radius: 100px;
+}
+
+.mapListItem {
+  background-color: var(--subBgST);
+}
+
+.mapListItem a {
+  font-family: var(--subFont);
+  font-size: 1.3rem;
+  color: var(--c_white);
+}
+
+.mapListItem span {
+  font-family: var(--mainFont);
+  font-size: 1.2rem !important;
+  padding-top: 3px;
+}
+
+.mapListItem span span {
+  font-family: inherit;
+}
+
+.mapListThumb {
+  border-radius: 5px 5px 0px 0px;
+  background: transparent;
+  top: 39%;
+  width: 100%;
+}
+
+.mapActionOvrl {
+  width: 100%;
+  height: 100%;
+  top: 0;
+}
+
+.mapActionOvrl .mapActionHol span {
+  font-size: 2.5rem !important;
 }
 /*# sourceMappingURL=main_custom.css.map */
