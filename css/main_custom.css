@@ -3394,12 +3394,12 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
   background: var(--accentColor) !important;
 }
 
-#menuWindow[style="overflow-y: auto; width: 1000px; max-height: calc(100% - 480px); top: 50%; transform: translate(-50%, -50%);"] > div:first-child {
+#menuWindow[style="overflow-y: auto; width: 1000px; top: 50%; transform: translate(-50%, -50%); max-height: calc(100% - 480px);"] > div:first-child {
   font-family: var(--mainFont);
   font-size: 30px;
 }
 
-#menuWindow[style="overflow-y: auto; width: 1000px; max-height: calc(100% - 480px); top: 50%; transform: translate(-50%, -50%);"] > div:first-child .button {
+#menuWindow[style="overflow-y: auto; width: 1000px; top: 50%; transform: translate(-50%, -50%); max-height: calc(100% - 480px);"] > div:first-child .button {
   background: var(--subBgST) !important;
   padding: 0.6rem 1rem !important;
   letter-spacing: 1px !important;
