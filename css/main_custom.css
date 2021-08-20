@@ -103,10 +103,6 @@
   color: var(--c_white);
 }
 
-#epicX {
-  display: none;
-}
-
 a {
   color: var(--accentColor);
 }
