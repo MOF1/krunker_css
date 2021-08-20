@@ -260,6 +260,40 @@ input[type="color"] {
   font-size: 1.7rem !important;
 }
 
+#clientExitPop {
+  border-color: var(--subBgST);
+  border-width: 4px;
+}
+
+#clientExitPop > div:first-child {
+  font-family: var(--subFont);
+  font-size: 1.6rem !important;
+  line-height: 3rem;
+}
+
+#clientExitPop #confirmBtn,
+#clientExitPop #declineBtn {
+  text-shadow: unset;
+  font-family: var(--mainFont);
+  font-size: 1.5rem;
+  border-radius: 100px;
+  color: var(--primaryBg);
+}
+
+#clientExitPop #confirmBtn:hover,
+#clientExitPop #declineBtn:hover {
+  -webkit-filter: brightness(0.9);
+          filter: brightness(0.9);
+}
+
+#clientExitPop #confirmBtn {
+  background: var(--orange2);
+}
+
+#clientExitPop #declineBtn {
+  background: var(--orange);
+}
+
 #voiceDisplay {
   left: 469px;
   bottom: 18px;
