@@ -2941,13 +2941,17 @@ $blurBg: #ffffff1f;
     // .menuIcon:hover {
     //   background-image: initial !important;
     // }
-
-    .iconExit {
-      background-image: url("../img/menu-icons/exit.png");
-    }
   }
 
   #clientExit {
+    span {
+      background-image: url("../img/menu-icons/exit.png");
+      background-size: 50%;
+      background-position: center;
+      width: 100%;
+      height: 100%;
+      color: transparent !important;
+    }
     margin-top: auto !important;
   }
 }

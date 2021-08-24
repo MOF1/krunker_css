@@ -1544,12 +1544,17 @@ input[type="checkbox"]:checked + .slider2:before {
   transition: transform 400ms ease, -webkit-transform 400ms ease;
 }
 
-#menuItemContainer .menuItem .iconExit {
-  background-image: url("../img/menu-icons/exit.png");
-}
-
 #menuItemContainer #clientExit {
   margin-top: auto !important;
+}
+
+#menuItemContainer #clientExit span {
+  background-image: url("../img/menu-icons/exit.png");
+  background-size: 50%;
+  background-position: center;
+  width: 100%;
+  height: 100%;
+  color: transparent !important;
 }
 
 #signedOutHeaderBar {
