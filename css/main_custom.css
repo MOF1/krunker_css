@@ -1869,6 +1869,7 @@ input[type="checkbox"]:checked + .slider2:before {
   position: absolute;
   top: unset;
   right: -45px;
+  bottom: 240px;
   background-color: var(--primaryBg);
   pointer-events: all;
   display: -webkit-box;
@@ -2001,6 +2002,134 @@ input[type="checkbox"]:checked + .slider2:before {
   color: var(--accentColor) !important;
 }
 
+#hiddenClasses {
+  position: absolute;
+  bottom: 18px;
+  right: 12px;
+  left: unset;
+  display: -ms-grid !important;
+  display: grid !important;
+  -ms-grid-columns: (1fr)[6];
+      grid-template-columns: repeat(6, 1fr);
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  gap: 10px;
+  width: calc(450px - 2rem);
+  min-height: 20px;
+  padding: 1rem;
+  background: var(--primaryBg);
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 40%, 0 40%);
+          clip-path: polygon(0 0, 100% 0, 100% 40%, 0 40%);
+  -webkit-transition: -webkit-clip-path 300ms ease;
+  transition: -webkit-clip-path 300ms ease;
+  transition: clip-path 300ms ease;
+  transition: clip-path 300ms ease, -webkit-clip-path 300ms ease;
+  pointer-events: initial;
+}
+
+#hiddenClasses:hover {
+  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+
+#hiddenClasses > * {
+  width: 61px;
+  height: 61px;
+  border-radius: 5px;
+  cursor: pointer;
+  pointer-events: fill;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 60%;
+  -ms-interpolation-mode: nearest-neighbor;
+      image-rendering: -webkit-optimize-contrast;
+      image-rendering: -moz-crisp-edges;
+      image-rendering: -o-pixelated;
+      image-rendering: pixelated;
+  -webkit-transition: background-color 300ms, -webkit-transform 300ms;
+  transition: background-color 300ms, -webkit-transform 300ms;
+  transition: background-color 300ms, transform 300ms;
+  transition: background-color 300ms, transform 300ms, -webkit-transform 300ms;
+}
+
+#hiddenClasses > *:hover {
+  background-color: var(--subBgST);
+}
+
+#hiddenClasses > *:active {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
+#hiddenClasses #menuClassPicker0 {
+  background-image: url("https://assets.krunker.io/textures/classes/icon_0.png");
+}
+
+#hiddenClasses #menuClassPicker1 {
+  background-image: url("https://assets.krunker.io/textures/classes/icon_1.png");
+}
+
+#hiddenClasses #menuClassPicker2 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: 1 / 2;
+  background-image: url("https://assets.krunker.io/textures/classes/icon_2.png");
+}
+
+#hiddenClasses #menuClassPicker3 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 3;
+  grid-area: 1 / 3;
+  background-image: url("https://assets.krunker.io/textures/classes/icon_3.png");
+}
+
+#hiddenClasses #menuClassPicker4 {
+  -ms-grid-row: 1;
+  -ms-grid-column: 6;
+  grid-area: 1 / 6;
+  background-image: url("https://assets.krunker.io/textures/classes/icon_4.png");
+}
+
+#hiddenClasses #menuClassPicker5 {
+  background-image: url("https://assets.krunker.io/textures/classes/icon_5.png");
+}
+
+#hiddenClasses #menuClassPicker6 {
+  background-image: url("https://assets.krunker.io/textures/classes/icon_6.png");
+}
+
+#hiddenClasses #menuClassPicker6 {
+  background-image: url("https://assets.krunker.io/textures/classes/icon_6.png");
+}
+
+#hiddenClasses #menuClassPicker7 {
+  background-image: url("https://assets.krunker.io/textures/classes/icon_7.png");
+}
+
+#hiddenClasses #menuClassPicker8 {
+  background-image: url("https://assets.krunker.io/textures/classes/icon_8.png");
+}
+
+#hiddenClasses #menuClassPicker9 {
+  background-image: url("https://assets.krunker.io/textures/classes/icon_9.png");
+}
+
+#hiddenClasses #menuClassPicker11 {
+  background-image: url("https://assets.krunker.io/textures/classes/icon_11.png");
+}
+
+#hiddenClasses #menuClassPicker12 {
+  background-image: url("https://assets.krunker.io/textures/classes/icon_12.png");
+}
+
+#hiddenClasses #menuClassPicker13 {
+  background-image: url("https://assets.krunker.io/textures/classes/icon_13.png");
+}
+
 #instructions {
   position: absolute;
   top: 50%;
@@ -2025,6 +2154,10 @@ input[type="checkbox"]:checked + .slider2:before {
 
 #instructionHolder div {
   word-spacing: unset;
+}
+
+#mapInfoHolder {
+  z-index: 1;
 }
 
 #mapInfoHolder div div {
@@ -3535,7 +3668,7 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
 
 #ot-sdk-btn-floating {
   top: unset;
-  bottom: 175px !important;
+  bottom: 285px !important;
   right: 329px !important;
   left: unset;
   -webkit-transform: scale(0.95);

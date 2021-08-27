@@ -3235,6 +3235,7 @@ $blurBg: #ffffff1f;
   position: absolute;
   top: unset;
   right: -45px;
+  bottom: 240px;
   background-color: $primaryBg;
   pointer-events: all;
 
@@ -3344,6 +3345,116 @@ $blurBg: #ffffff1f;
   }
 }
 
+// Hidden menu classes
+#hiddenClasses {
+  position: absolute;
+  bottom: 18px;
+  right: 12px;
+  left: unset;
+
+  display: grid !important;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  justify-content: flex-start;
+  gap: 10px;
+
+  width: calc(450px - 2rem);
+  min-height: 20px;
+  padding: 1rem;
+
+  background: $primaryBg;
+  clip-path: polygon(0 0, 100% 0, 100% 40%, 0 40%);
+
+  transition: clip-path 300ms ease;
+  pointer-events: initial;
+
+  &:hover {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  }
+
+  & > * {
+    width: 61px;
+    height: 61px;
+    border-radius: 5px;
+    cursor: pointer;
+    pointer-events: fill;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 60%;
+    image-rendering: pixelated;
+
+    transition: background-color 300ms, transform 300ms;
+
+    &:hover {
+      background-color: $subBgST;
+    }
+
+    &:active {
+      transform: scale(0.9);
+    }
+  }
+
+  #menuClassPicker0 {
+    background-image: url("https://assets.krunker.io/textures/classes/icon_0.png");
+  }
+
+  #menuClassPicker1 {
+    background-image: url("https://assets.krunker.io/textures/classes/icon_1.png");
+  }
+
+  #menuClassPicker2 {
+    grid-area: 1 / 2;
+    background-image: url("https://assets.krunker.io/textures/classes/icon_2.png");
+  }
+
+  #menuClassPicker3 {
+    grid-area: 1 / 3;
+    background-image: url("https://assets.krunker.io/textures/classes/icon_3.png");
+  }
+
+  #menuClassPicker4 {
+    grid-area: 1 / 6;
+    background-image: url("https://assets.krunker.io/textures/classes/icon_4.png");
+  }
+
+  #menuClassPicker5 {
+    background-image: url("https://assets.krunker.io/textures/classes/icon_5.png");
+  }
+
+  #menuClassPicker6 {
+    background-image: url("https://assets.krunker.io/textures/classes/icon_6.png");
+  }
+
+  #menuClassPicker6 {
+    background-image: url("https://assets.krunker.io/textures/classes/icon_6.png");
+  }
+
+  #menuClassPicker7 {
+    background-image: url("https://assets.krunker.io/textures/classes/icon_7.png");
+  }
+
+  #menuClassPicker8 {
+    background-image: url("https://assets.krunker.io/textures/classes/icon_8.png");
+  }
+
+  #menuClassPicker9 {
+    background-image: url("https://assets.krunker.io/textures/classes/icon_9.png");
+  }
+
+  #menuClassPicker11 {
+    background-image: url("https://assets.krunker.io/textures/classes/icon_11.png");
+  }
+
+  #menuClassPicker12 {
+    background-image: url("https://assets.krunker.io/textures/classes/icon_12.png");
+  }
+
+  #menuClassPicker13 {
+    background-image: url("https://assets.krunker.io/textures/classes/icon_13.png");
+  }
+}
+
 #instructions {
   position: absolute;
   top: 50%;
@@ -3374,6 +3485,7 @@ $blurBg: #ffffff1f;
 }
 
 #mapInfoHolder {
+  z-index: 1;
   div {
     div {
       display: none !important;
@@ -4830,7 +4942,7 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
 // Privacy Cookies button
 #ot-sdk-btn-floating {
   top: unset;
-  bottom: 175px !important;
+  bottom: 285px !important;
   right: 329px !important;
   left: unset;
   transform: scale(0.95);
