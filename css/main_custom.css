@@ -3380,6 +3380,12 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
   font-family: var(--main_font);
 }
 
+.challHeadrT,
+.challHeadrS {
+  font-family: var(--mainFont);
+  font-size: 3rem;
+}
+
 .xpBar[style="margin-top:15px;"] {
   width: 99% !important;
   margin-top: 5rem !important;
