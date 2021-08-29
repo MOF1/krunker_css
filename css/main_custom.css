@@ -3385,9 +3385,14 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
   margin-top: 5rem !important;
 }
 
+.chalCard[style*="margin-left:20px"] {
+  margin-left: 0 !important;
+}
+
 .chalCard {
   background: var(--subBgST) !important;
   border-color: transparent !important;
+  width: calc(100% - 28px);
 }
 
 .chalCard .chalImgC {
@@ -3397,7 +3402,7 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
 
 .chalCard .chalRight {
   margin-left: 30px !important;
-  width: 900px !important;
+  width: calc(100% - 153px) !important;
   font-family: var(--mainFont);
   font-size: 2.2rem;
   letter-spacing: 1px;
