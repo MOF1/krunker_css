@@ -3866,6 +3866,7 @@ $blurBg: #ffffff1f;
         var(--subBgST)
       ) !important;
       border-radius: 10px;
+      z-index: -1;
     }
 
     #ammoVal {

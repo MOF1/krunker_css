@@ -2596,6 +2596,7 @@ input[type="checkbox"]:checked + .slider2:before {
   background: -webkit-gradient(linear, left bottom, left top, from(transparent), to(var(--subBgST))) !important;
   background: linear-gradient(to top, transparent, var(--subBgST)) !important;
   border-radius: 10px;
+  z-index: -1;
 }
 
 #bottomRight #ammoDisplay #ammoVal {
