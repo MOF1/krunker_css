@@ -3645,7 +3645,7 @@ $blurBg: #ffffff1f;
 }
 
 #bottomLeftHolder {
-  background: $subBgST;
+  background: linear-gradient(to top, transparent, var(--subBgST)) !important;
   width: 304px;
   border-radius: 7px;
   div[style="display:inline-block;vertical-align:bottom"] {
@@ -3683,12 +3683,13 @@ $blurBg: #ffffff1f;
     letter-spacing: 0.1rem;
     #healthValue {
       font-family: $mainFont;
-      font-size: 40px;
+      font-size: 45px;
       color: $c_white;
       span {
-        font-family: $mainFont;
-        font-size: 28px;
+        font-family: $subFont;
+        font-size: 20px;
         color: $c_whiteST;
+        opacity: 0.7;
       }
     }
     #challIcon {
@@ -3760,6 +3761,7 @@ $blurBg: #ffffff1f;
       .weapIcon {
         width: 70px;
         height: auto;
+        opacity: 0.3 !important;
         transition: all 280ms;
       }
       .weapKey {
@@ -3772,6 +3774,7 @@ $blurBg: #ffffff1f;
       //background: red;
       .weapIcon[style="opacity: 1;"],
       .weapIcon[style="opacity:1"] {
+        opacity: 0.8 !important;
         filter: contrast(3.5);
         transform: translate(30px, -50px) scale(1.6);
       }
@@ -3781,6 +3784,7 @@ $blurBg: #ffffff1f;
       //Disabled
       //background: blue;
       .weapIcon[style="opacity: 1; margin-right: 25px;"] {
+        opacity: 0.8 !important;
         filter: contrast(3.5);
         transform: translate(-50px, -40px) scale(1.5);
       }
@@ -3790,6 +3794,7 @@ $blurBg: #ffffff1f;
       //Disabled
       //background: green;
       .weapIcon[style="opacity: 1; margin-right: 25px;"] {
+        opacity: 0.8 !important;
         filter: contrast(3.5);
         transform: translate(-120px, -40px) scale(1.6);
       }
@@ -3840,29 +3845,41 @@ $blurBg: #ffffff1f;
     align-items: flex-end;
     justify-content: flex-end;
 
-    background-color: $subBgST !important;
+    background-color: transparent;
     background-image: linear-gradient(
-      to right,
-      var(--subBgST),
-      var(--subBgST)
+      to top,
+      var(--accentColorST),
+      var(--accentColorST)
     ) !important;
     border-radius: 10px;
     width: 290px;
     height: 90px;
     transform: translateY(5px);
 
+    &::after {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(
+        to top,
+        transparent,
+        var(--subBgST)
+      ) !important;
+      border-radius: 10px;
+    }
+
     #ammoVal {
       font-family: $mainFont !important;
-      font-size: 40px !important;
+      font-size: 45px !important;
       color: $c_white !important;
       margin-bottom: 2rem;
       letter-spacing: 1px !important;
     }
     #ammoMax {
-      font-family: $mainFont !important;
-      font-size: 28px !important;
+      font-family: $subFont !important;
+      font-size: 20px !important;
       color: $c_whiteST !important;
-      margin-bottom: 2rem;
+      margin-bottom: 2.6rem;
       margin-right: 2.2rem;
       letter-spacing: 1px !important;
     }
