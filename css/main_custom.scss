@@ -3891,15 +3891,16 @@ $blurBg: #ffffff1f;
 }
 
 #igXPBar {
-  border-radius: 10px !important;
-  #igXPBarProg {
-    border-radius: 10px !important;
-    background-image: linear-gradient(
-      to right,
-      $gradientColor4,
-      $gradientColor5
-    ) !important;
-  }
+  // border-radius: 10px !important;
+  display: none !important;
+  // #igXPBarProg {
+  //   border-radius: 10px !important;
+  //   background-image: linear-gradient(
+  //     to right,
+  //     $gradientColor4,
+  //     $gradientColor5
+  //   ) !important;
+  // }
 }
 
 #topLeftHolder {

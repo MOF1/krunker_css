@@ -2621,13 +2621,7 @@ input[type="checkbox"]:checked + .slider2:before {
 }
 
 #igXPBar {
-  border-radius: 10px !important;
-}
-
-#igXPBar #igXPBarProg {
-  border-radius: 10px !important;
-  background-image: -webkit-gradient(linear, left top, right top, from(var(--gradientColor4)), to(var(--gradientColor5))) !important;
-  background-image: linear-gradient(to right, var(--gradientColor4), var(--gradientColor5)) !important;
+  display: none !important;
 }
 
 #topLeftHolder {
