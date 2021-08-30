@@ -1,7 +1,6 @@
 //Written by epicX67
 //If you like my work, support me :)
 //paypal.me/epicX67
-@import url(configs.css);
 $primaryBg: var(--primaryBg);
 $subBg: var(--subBg);
 $subBgM: var(--subBgM);
@@ -3912,6 +3911,27 @@ $blurBg: #ffffff1f;
 
   .tScoreF {
     font-family: Material Icons !important;
+  }
+
+  #roundsDisplay {
+    display: flex !important;
+    background: transparent;
+    #roundsVal {
+      letter-spacing: 10px;
+      margin-right: 1rem;
+
+      &::first-letter {
+        font-size: 3.5rem;
+      }
+
+      &:not(::first-letter) {
+        opacity: 0.5;
+      }
+    }
+
+    #roundSub {
+      font-family: $subFont !important;
+    }
   }
 
   #curGameInfo {

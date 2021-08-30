@@ -2637,6 +2637,30 @@ input[type="checkbox"]:checked + .slider2:before {
   font-family: Material Icons !important;
 }
 
+#topLeftHolder #roundsDisplay {
+  display: -webkit-box !important;
+  display: -ms-flexbox !important;
+  display: flex !important;
+  background: transparent;
+}
+
+#topLeftHolder #roundsDisplay #roundsVal {
+  letter-spacing: 10px;
+  margin-right: 1rem;
+}
+
+#topLeftHolder #roundsDisplay #roundsVal::first-letter {
+  font-size: 3.5rem;
+}
+
+#topLeftHolder #roundsDisplay #roundsVal:not(::first-letter) {
+  opacity: 0.5;
+}
+
+#topLeftHolder #roundsDisplay #roundSub {
+  font-family: var(--subFont) !important;
+}
+
 #topLeftHolder #curGameInfo > div {
   display: none;
 }
