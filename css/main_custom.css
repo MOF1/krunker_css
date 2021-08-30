@@ -1485,7 +1485,7 @@ input[type="checkbox"]:checked + .slider2:before {
   width: 100%;
   aspect-ratio: 1 / 1;
   height: 120px;
-  background-image: url("../img/krunker.png");
+  background-image: url("/img/krunker.png");
   background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
@@ -3778,7 +3778,7 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
   right: 0;
   color: transparent !important;
   height: 120px;
-  background-image: url("../img/spinner.svg");
+  background-image: url("/img/spinner.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
