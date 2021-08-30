@@ -2885,7 +2885,7 @@ $blurBg: #ffffff1f;
     width: 100%;
     aspect-ratio: 1 / 1;
     height: 120px;
-    background-image: url("/img/krunker.png");
+    background-image: url("https://www.krunker.io/img/krunker.png");
     background-size: 50%;
     background-position: center;
     background-repeat: no-repeat;
@@ -2949,7 +2949,7 @@ $blurBg: #ffffff1f;
 
   #clientExit {
     span {
-      background-image: url("../img/menu-icons/exit.png");
+      background-image: url("https://www.krunker.io/img/menu-icons/exit.png");
       background-size: 50%;
       background-position: center;
       width: 100%;
@@ -5059,7 +5059,7 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
     color: transparent !important;
     height: 120px;
 
-    background-image: url("/img/spinner.svg");
+    background-image: url("https://www.krunker.io/img/spinner.svg");
     background-repeat: no-repeat;
     background-position: center;
   }
