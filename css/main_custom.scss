@@ -3914,15 +3914,25 @@ $blurBg: #ffffff1f;
     font-family: Material Icons !important;
   }
 
+  #curGameInfo {
+    & > div {
+      display: none;
+    }
+  }
+
   #timerDisplay {
     background: transparent !important;
     padding: 0 !important;
     margin: 0 !important;
     #timerIcon {
       display: none;
+      width: 0;
+      height: 0;
     }
     #timerVal {
       font-size: 60px !important;
+      padding: 0 !important;
+      margin: 0 !important;
       //letter-spacing: 5px;
     }
   }
@@ -3935,7 +3945,7 @@ $blurBg: #ffffff1f;
     left: 0;
     display: flex;
     flex-direction: row;
-    transform: translate(0px, -35px);
+    transform: translate(5px, -35px);
     #fpsDisplay[style="display: block;"] {
       display: flex !important;
       flex-direction: row;
@@ -4002,6 +4012,18 @@ $blurBg: #ffffff1f;
         margin-left: 1rem;
         text-align: left;
         width: 200px;
+      }
+    }
+  }
+}
+
+#killFeed {
+  & > div {
+    .kfItem {
+      background-color: unset;
+      .kfMsg span {
+        font-family: $mainFont !important;
+        font-size: 1.4rem;
       }
     }
   }

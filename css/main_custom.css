@@ -2637,6 +2637,10 @@ input[type="checkbox"]:checked + .slider2:before {
   font-family: Material Icons !important;
 }
 
+#topLeftHolder #curGameInfo > div {
+  display: none;
+}
+
 #topLeftHolder #timerDisplay {
   background: transparent !important;
   padding: 0 !important;
@@ -2645,10 +2649,14 @@ input[type="checkbox"]:checked + .slider2:before {
 
 #topLeftHolder #timerDisplay #timerIcon {
   display: none;
+  width: 0;
+  height: 0;
 }
 
 #topLeftHolder #timerDisplay #timerVal {
   font-size: 60px !important;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 #topLeftHolder .debugInfo {
@@ -2664,8 +2672,8 @@ input[type="checkbox"]:checked + .slider2:before {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-transform: translate(0px, -35px);
-          transform: translate(0px, -35px);
+  -webkit-transform: translate(5px, -35px);
+          transform: translate(5px, -35px);
 }
 
 #topLeftHolder .debugInfo #fpsDisplay[style="display: block;"] {
@@ -2759,6 +2767,15 @@ input[type="checkbox"]:checked + .slider2:before {
   margin-left: 1rem;
   text-align: left;
   width: 200px;
+}
+
+#killFeed > div .kfItem {
+  background-color: unset;
+}
+
+#killFeed > div .kfItem .kfMsg span {
+  font-family: var(--mainFont) !important;
+  font-size: 1.4rem;
 }
 
 .topRightCounters {
