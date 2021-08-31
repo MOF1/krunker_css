@@ -2913,13 +2913,11 @@ $blurBg: #ffffff1f;
     // }
 
     &:hover {
-      background: #ffffff12 !important;
-      background: var(--sidebarIconBgOnHover) !important;
+      background: var(--sidebarIconBgOnHover, #ffffff12) !important;
 
       .menBtnIcn,
       .menuItemIcon {
-        color: white;
-        color: var(--sidebarIconColorOnHover) !important;
+        color: var(--sidebarIconColorOnHover, white) !important;
         filter: unset;
         transform: scale(1.2);
       }

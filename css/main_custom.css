@@ -1513,14 +1513,12 @@ input[type="checkbox"]:checked + .slider2:before {
 }
 
 #menuItemContainer .menuItem:hover {
-  background: #ffffff12 !important;
-  background: var(--sidebarIconBgOnHover) !important;
+  background: var(--sidebarIconBgOnHover, #ffffff12) !important;
 }
 
 #menuItemContainer .menuItem:hover .menBtnIcn,
 #menuItemContainer .menuItem:hover .menuItemIcon {
-  color: white;
-  color: var(--sidebarIconColorOnHover) !important;
+  color: var(--sidebarIconColorOnHover, white) !important;
   -webkit-filter: unset;
           filter: unset;
   -webkit-transform: scale(1.2);
