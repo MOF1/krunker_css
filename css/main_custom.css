@@ -1553,7 +1553,7 @@ input[type="checkbox"]:checked + .slider2:before {
 }
 
 #menuItemContainer #clientExit span {
-  background-image: url("https://www.krunker.io/img/menu-icons/exit.png");
+  background-image: url("../img/menu-icons/exit.png");
   background-size: 50%;
   background-position: center;
   width: 100%;
