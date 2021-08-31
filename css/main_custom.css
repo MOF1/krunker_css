@@ -2646,9 +2646,6 @@ input[type="checkbox"]:checked + .slider2:before {
 }
 
 #topLeftHolder #roundsDisplay {
-  display: -webkit-box !important;
-  display: -ms-flexbox !important;
-  display: flex !important;
   background: transparent;
 }
 
