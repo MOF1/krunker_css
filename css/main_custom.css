@@ -1659,6 +1659,10 @@ input[type="checkbox"]:checked + .slider2:before {
   line-height: 60px;
 }
 
+#signedInHeaderBar #menuUsernameContainer #menuAccountUsername:hover {
+  color: var(--accentColor);
+}
+
 #signedInHeaderBar .krInfo {
   margin-right: 1rem;
 }
@@ -1677,6 +1681,10 @@ input[type="checkbox"]:checked + .slider2:before {
 
 #signedInHeaderBar .krInfo .krSocial {
   display: none;
+}
+
+#signedInHeaderBar #mailContainer #mailIcon:hover {
+  color: var(--accentColor) !important;
 }
 
 #signedInHeaderBar #mLevelCont {
@@ -1858,6 +1866,7 @@ input[type="checkbox"]:checked + .slider2:before {
   -webkit-filter: brightness(1.2);
           filter: brightness(1.2);
   border: none !important;
+  color: var(--accentColor) !important;
 }
 
 .button.small {

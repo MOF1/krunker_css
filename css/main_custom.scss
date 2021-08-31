@@ -1,6 +1,7 @@
 //Written by epicX67
 //If you like my work, support me :)
 //paypal.me/epicX67
+// @import url("./configs.css");
 $primaryBg: var(--primaryBg);
 $subBg: var(--subBg);
 $subBgM: var(--subBgM);
@@ -3029,6 +3030,10 @@ $blurBg: #ffffff1f;
       font-size: 1.8rem;
       letter-spacing: 2px;
       line-height: 60px;
+
+      &:hover {
+        color: $accentColor;
+      }
     }
   }
 
@@ -3053,6 +3058,9 @@ $blurBg: #ffffff1f;
   }
 
   #mailContainer {
+    #mailIcon:hover {
+      color: $accentColor !important;
+    }
   }
 
   #mLevelCont {
@@ -3225,6 +3233,7 @@ $blurBg: #ffffff1f;
   &:hover {
     filter: brightness(1.2);
     border: none !important;
+    color: $accentColor !important;
   }
 }
 .button.small {
