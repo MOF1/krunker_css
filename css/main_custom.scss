@@ -3586,9 +3586,19 @@ $blurBg: #ffffff1f;
   width: 300px;
   bottom: 20px;
   left: 20px;
-  background: transparent;
+  background: rgba(0, 0, 0, 0.4);
   padding: 0;
   border-radius: 5px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  min-height: 300px;
+  mask-image: linear-gradient(to bottom, transparent, black, black);
+
+  #chatList {
+    background: transparent;
+  }
 }
 
 #chatInputHolder {
@@ -3598,7 +3608,7 @@ $blurBg: #ffffff1f;
   margin-top: 6px;
   font-size: 15px;
   box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.1);
   border: unset;
   pointer-events: all;
   border-radius: 5px;

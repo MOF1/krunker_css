@@ -2274,9 +2274,28 @@ input[type="checkbox"]:checked + .slider2:before {
   width: 300px;
   bottom: 20px;
   left: 20px;
-  background: transparent;
+  background: rgba(0, 0, 0, 0.4);
   padding: 0;
   border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  min-height: 300px;
+  -webkit-mask-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(black), to(black));
+  -webkit-mask-image: linear-gradient(to bottom, transparent, black, black);
+          mask-image: -webkit-gradient(linear, left top, left bottom, from(transparent), color-stop(black), to(black));
+          mask-image: linear-gradient(to bottom, transparent, black, black);
+}
+
+#chatHolder #chatList {
+  background: transparent;
 }
 
 #chatInputHolder {
@@ -2287,7 +2306,7 @@ input[type="checkbox"]:checked + .slider2:before {
   font-size: 15px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  background-color: rgba(0, 0, 0, 0.4);
+  background-color: rgba(0, 0, 0, 0.1);
   border: unset;
   pointer-events: all;
   border-radius: 5px;
