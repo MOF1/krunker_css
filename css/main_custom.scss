@@ -1,7 +1,7 @@
 //Written by epicX67
 //If you like my work, support me :)
 //paypal.me/epicX67
-// @import url("./configs.css");
+@import url("./configs.css");
 $primaryBg: var(--primaryBg);
 $subBg: var(--subBg);
 $subBgM: var(--subBgM);
@@ -2477,79 +2477,6 @@ input[type="checkbox"]:checked + .slider2:before {
 //   }
 // }
 
-.matchVote {
-  position: relative;
-  margin-bottom: 10px;
-  height: 80px;
-  width: 200px;
-  overflow: hidden;
-  margin-right: 8px;
-  display: inline-block;
-  margin-top: 10px;
-  border-radius: 4px;
-  text-shadow: none;
-
-  .matchVoteMap {
-    position: absolute;
-    color: $c_white;
-    line-height: 28px;
-    padding-right: 0px;
-    z-index: 1;
-    pointer-events: none;
-
-    font-family: $mainFont;
-    font-size: 18px;
-    letter-spacing: 1px;
-
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    padding-top: 13px;
-    padding-left: 10px;
-    text-align: start;
-    background: #00000057;
-  }
-
-  .matchVoteMode {
-    position: absolute;
-
-    top: 45%;
-    left: 0;
-    padding-left: 10px;
-    font-size: 23px;
-    height: auto;
-    padding-right: 0px;
-    z-index: 1;
-    font-family: $mainFont;
-    color: $c_white;
-    pointer-events: none;
-  }
-
-  .matchVoteTotal {
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    font-size: 30px;
-    height: auto;
-    padding-right: 0px;
-    z-index: 1;
-    padding-left: 0px;
-    color: $c_white;
-    pointer-events: none;
-
-    padding: 10px;
-    font-family: $mainFont;
-    padding-left: 15px;
-    color: $c_white;
-    pointer-events: none;
-  }
-
-  .matchVoteThumb {
-    transform: none;
-  }
-}
-
 // #dropsPop,
 // #claimPop,
 // #confPremiumPop,
@@ -2662,7 +2589,7 @@ input[type="checkbox"]:checked + .slider2:before {
 
 // Stream
 #tlInfHold {
-  clip-path: polygon(0 0, 100% 0, 100% 20%, 0 20%);
+  clip-path: polygon(0 0, 100% 0, 100% 70px, 0 70px);
   transition: clip-path 400ms 280ms ease;
   top: 120px;
   left: unset;
@@ -2671,6 +2598,9 @@ input[type="checkbox"]:checked + .slider2:before {
   #streamContainer {
     background: transparent !important;
     transition: background 400ms 280ms ease;
+    #streamCon {
+      display: block !important;
+    }
     .strmCat {
       color: white !important;
       transition: color 400ms 280ms ease;
@@ -4187,6 +4117,175 @@ $blurBg: #ffffff1f;
 .endTablePfp {
   background: $subBgST;
   border-color: $subBgST;
+}
+
+.matchVote {
+  position: relative;
+  margin-bottom: 10px;
+  height: 80px;
+  width: 200px;
+  overflow: hidden;
+  margin-right: 8px;
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 4px;
+  text-shadow: none;
+
+  .matchVoteMap {
+    position: absolute;
+    color: $c_white;
+    line-height: 28px;
+    padding-right: 0px;
+    z-index: 2;
+    pointer-events: none;
+
+    font-family: $mainFont;
+    font-size: 18px;
+    letter-spacing: 1px;
+
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    padding-top: 13px;
+    padding-left: 10px;
+    text-align: start;
+    background: #00000057;
+  }
+
+  .matchVoteMode {
+    position: absolute;
+
+    top: 45%;
+    left: 0;
+    padding-left: 10px;
+    font-size: 23px;
+    height: auto;
+    padding-right: 0px;
+    z-index: 2;
+    font-family: $mainFont;
+    color: $c_white;
+    pointer-events: none;
+  }
+
+  .matchVoteTotal {
+    position: absolute;
+    // bottom: 0;
+    // right: 0;
+    font-size: 30px;
+    height: auto;
+    // padding-right: 0px;
+    z-index: 1;
+    padding-left: 0px;
+    color: $c_white;
+    pointer-events: none;
+
+    padding: 10px;
+    font-family: $mainFont;
+    padding-left: 15px;
+    color: $c_white;
+    pointer-events: none;
+
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+    padding-right: 1rem;
+
+    &::after {
+      content: "";
+      position: absolute;
+      background: transparent;
+      backdrop-filter: blur(0px);
+      z-index: -1;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      transition: backdrop-filter 300ms;
+    }
+  }
+
+  .matchVoteTotal[style*="color: rgb(251, 192, 45)"] {
+    color: $accentColor !important;
+
+    &::after {
+      backdrop-filter: blur(5px);
+    }
+  }
+
+  .matchVoteThumb {
+    transform: none;
+    top: 1px;
+    left: 1px;
+    height: 77px;
+    width: 198px;
+  }
+}
+
+.tabHeader.selected {
+  color: $accentColor;
+  border-bottom: 4px solid $accentColor;
+}
+
+span[style*="color:#F8C55C"] {
+  color: $accentColor !important;
+}
+
+#lvlLayout .xpLvl {
+  margin-top: 0;
+  display: grid;
+  place-content: center;
+}
+
+.xpEndBar {
+  width: calc(100% - 2rem);
+  height: 21px;
+  padding: 6px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 100px;
+  position: relative;
+  margin: 5px 1rem;
+
+  display: flex;
+  align-items: center;
+
+  .xpEndBarB:first-child {
+    background-image: linear-gradient(
+      to right,
+      var(--gradientColor4),
+      var(--gradientColor3)
+    );
+    border-radius: 100px;
+    z-index: 22;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+  }
+
+  .xpEndBarB:nth-child(2) {
+    background: var(--accentColor) !important;
+    box-shadow: 0px 0px 8px var(--accentColor);
+    margin-left: 0px !important;
+    border-radius: 100px;
+    z-index: 0;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+  }
+
+  .xpEndBarV {
+    display: grid;
+    place-content: center;
+    padding: 0;
+    top: 0;
+
+    font-size: 14px !important;
+    font-family: $subFont !important;
+    letter-spacing: 2px;
+    word-spacing: 7px;
+  }
 }
 
 .ot-floating-button {
