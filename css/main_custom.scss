@@ -3569,6 +3569,13 @@ $blurBg: #ffffff1f;
 
   #chatList {
     background: transparent;
+
+    &::-webkit-scrollbar-thumb {
+      background: var(--accentColorST);
+    }
+    &::-webkit-scrollbar-track {
+      background-color: transparent;
+    }
   }
 }
 

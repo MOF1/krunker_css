@@ -2278,6 +2278,14 @@ input[type="checkbox"]:checked + .slider2:before {
   background: transparent;
 }
 
+#chatHolder #chatList::-webkit-scrollbar-thumb {
+  background: var(--accentColorST);
+}
+
+#chatHolder #chatList::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
 #chatInputHolder {
   width: 100%;
   padding: 6px;
