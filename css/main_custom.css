@@ -2369,7 +2369,7 @@ input[type="checkbox"]:checked + .slider2:before {
 }
 
 #chatHolder #chatList::-webkit-scrollbar-thumb {
-  background: var(--accentColorST);
+  background: var(--c_whiteST);
 }
 
 #chatHolder #chatList::-webkit-scrollbar-track {
