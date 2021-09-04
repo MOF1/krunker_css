@@ -3166,6 +3166,7 @@ $blurBg: #ffffff1f;
   align-items: center;
   justify-content: flex-start;
   border-bottom: $border;
+  border-radius: 0px !important;
   pointer-events: all;
   .lgn {
     width: unset !important;

@@ -1657,6 +1657,7 @@ input[type="checkbox"]:checked + .slider2:before {
       -ms-flex-pack: start;
           justify-content: flex-start;
   border-bottom: 4px solid #ffffff1c;
+  border-radius: 0px !important;
   pointer-events: all;
 }
 
