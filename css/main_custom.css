@@ -2916,7 +2916,6 @@ input[type="checkbox"]:checked + .slider2:before {
   padding-top: 13px;
   padding-left: 10px;
   text-align: start;
-  background: #00000057;
 }
 
 .matchVote .matchVoteMode {
@@ -2968,7 +2967,7 @@ input[type="checkbox"]:checked + .slider2:before {
   background: transparent;
   -webkit-backdrop-filter: blur(0px);
           backdrop-filter: blur(0px);
-  z-index: -1;
+  z-index: -2;
   top: 0;
   bottom: 0;
   left: 0;
@@ -2977,6 +2976,18 @@ input[type="checkbox"]:checked + .slider2:before {
   transition: -webkit-backdrop-filter 300ms;
   transition: backdrop-filter 300ms;
   transition: backdrop-filter 300ms, -webkit-backdrop-filter 300ms;
+}
+
+.matchVote .matchVoteTotal::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: #00000057;
+  z-index: -1;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .matchVote .matchVoteTotal[style*="color: rgb(251, 192, 45)"] {
