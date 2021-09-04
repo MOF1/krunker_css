@@ -1199,138 +1199,227 @@ input[type="checkbox"]:checked + .slider2:before {
 }
 
 #tlInfHold {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 70px, 0 70px);
-          clip-path: polygon(0 0, 100% 0, 100% 70px, 0 70px);
-  -webkit-transition: -webkit-clip-path 400ms 280ms ease;
-  transition: -webkit-clip-path 400ms 280ms ease;
-  transition: clip-path 400ms 280ms ease;
-  transition: clip-path 400ms 280ms ease, -webkit-clip-path 400ms 280ms ease;
-  top: 120px;
+  top: 0;
+  bottom: 0;
   left: unset;
-  right: 7px;
+  right: 0;
+  width: 360px;
+  -webkit-backdrop-filter: blur(20px);
+          backdrop-filter: blur(20px);
+  border-left: 4px solid #ffffff1c;
+  background: #ffffff1f;
+  z-index: 111111;
+  pointer-events: all;
+  right: -15.8%;
+  -webkit-transition: right 800ms cubic-bezier(0.77, 0.01, 0.32, 0.99);
+  transition: right 800ms cubic-bezier(0.77, 0.01, 0.32, 0.99);
 }
 
-#tlInfHold #streamContainer {
-  background: transparent !important;
-  -webkit-transition: background 400ms 280ms ease;
-  transition: background 400ms 280ms ease;
+#tlInfHold::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: -20px;
+  width: 20px;
 }
 
-#tlInfHold #streamContainer #streamCon {
-  display: block !important;
-}
-
-#tlInfHold #streamContainer .strmCat {
-  color: white !important;
-  -webkit-transition: color 400ms 280ms ease;
-  transition: color 400ms 280ms ease;
-}
-
-#tlInfHold > *:not(#streamContainer) {
-  display: none !important;
+#tlInfHold::before {
+  content: "keyboard_double_arrow_left";
+  font-family: "Material Icons";
+  position: absolute;
+  top: 12%;
+  left: -74px;
+  width: auto;
+  height: auto;
+  color: white;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  font-size: 3rem;
+  -webkit-transition: opacity 200ms;
+  transition: opacity 200ms;
 }
 
 #tlInfHold:hover {
-  -webkit-clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-          clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-  -webkit-transition: -webkit-clip-path 280ms ease;
-  transition: -webkit-clip-path 280ms ease;
-  transition: clip-path 280ms ease;
-  transition: clip-path 280ms ease, -webkit-clip-path 280ms ease;
+  right: 0;
 }
 
-#tlInfHold:hover #streamContainer {
-  background: #00000080 !important;
-  -webkit-transition: background 280ms ease;
-  transition: background 280ms ease;
+#tlInfHold:hover::before {
+  opacity: 0;
 }
 
-#tlInfHold:hover #streamContainer .strmCat {
-  color: var(--accentColor) !important;
-  -webkit-transition: color 280ms ease;
-  transition: color 280ms ease;
+#tlInfHold #streamContainer {
+  background: transparent;
+  color: var(--c_white);
+  margin: 0;
+  padding: 0;
 }
 
-#krunkerio_300x250_4 {
-  display: none !important;
+#tlInfHold #streamContainer #streamCon,
+#tlInfHold #streamContainer #friendCon {
+  display: block !important;
 }
 
-#streamContainer {
-  background: var(--primaryBg);
-  padding: 1.5rem;
-  border-radius: 0;
-  left: 125px;
-  letter-spacing: 0.06rem;
-  padding-bottom: 0px;
+#tlInfHold #streamContainer .streamItem:first-child {
+  margin: 0.5rem !important;
+  padding: 1rem;
+  border-radius: 5px;
+  font-family: var(--mainFont);
+}
+
+#tlInfHold #streamContainer .streamItem:first-child .strmCat {
+  font-family: var(--mainFont);
+  font-size: 2rem;
+  text-shadow: unset !important;
+  margin: 0 !important;
+}
+
+#tlInfHold #streamContainer .streamItem:last-child {
+  margin-bottom: 2rem !important;
+}
+
+#tlInfHold #streamContainer .streamItem:not(:first-child) {
+  margin: 0.5rem;
+  margin-bottom: 0.9rem;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-}
-
-#streamContainer .streamItem {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  margin-bottom: 1.2rem;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
-#streamContainer .streamItem .strmCat {
+#tlInfHold #streamContainer .streamItem:not(:first-child) > *:not(:last-child) {
+  margin-right: 1rem !important;
+}
+
+#tlInfHold #streamContainer .streamItem:not(:first-child) .strmIcn {
+  background: transparent;
+  margin: 0;
+  width: 50px;
+  height: 50px;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+#tlInfHold #streamContainer .streamItem:not(:first-child) .streamName {
+  width: 100%;
+  -webkit-transform: translateY(-3px);
+          transform: translateY(-3px);
+}
+
+#tlInfHold #streamContainer .streamItem:not(:first-child) .streamName:hover {
+  opacity: 1;
+}
+
+#tlInfHold #streamContainer .streamItem:not(:first-child) .streamName .strmLink {
   font-family: var(--mainFont);
-  font-size: 2rem;
-  color: var(--accentColor);
-  margin-bottom: 0.2rem;
-  text-align: right;
+  font-size: 1.4rem;
+  text-shadow: unset !important;
+  letter-spacing: 1px;
 }
 
-#streamContainer .streamItem .youtube {
-  text-shadow: none;
+#tlInfHold #streamContainer .streamItem:not(:first-child) .streamName .strmPartner {
+  margin: 0;
 }
 
-#streamContainer .streamItem .twitch {
-  text-shadow: none;
+#tlInfHold #streamContainer .streamItem:not(:first-child) .streamName .strmPartner .streamPartner {
+  color: var(--c_whiteST);
+  margin-left: 2px;
+  top: 5px;
 }
 
-#streamContainer .streamItem .streamName {
-  font-family: var(--mainFont);
-  font-size: 20px;
-}
-
-#streamContainer .streamItem .streamName .strmLink {
-  font-family: var(--mainFont);
-  font-size: 18px;
-}
-
-#streamContainer .streamItem .streamName .blackShad {
-  text-shadow: none;
-}
-
-#streamContainer .streamItem .streamName .strmViews {
+#tlInfHold #streamContainer .streamItem:not(:first-child) .streamName .strmViews {
   font-family: var(--subFont);
-  font-size: 18px;
-  display: none;
+  font-size: 1rem;
+  color: var(--c_whiteST);
 }
 
-#streamContainer .streamItem .streamName .strmIcn {
+#tlInfHold #streamContainer .streamItem:not(:first-child):hover {
+  background: #ffffff1f;
+}
+
+#tlInfHold #friendCon .strmIcn {
+  border-radius: 5px;
+}
+
+#tlInfHold #friendCon .strmIcn[src*="./img/favicon.png"] {
+  -ms-interpolation-mode: nearest-neighbor !important;
+      image-rendering: -webkit-optimize-contrast !important;
+      image-rendering: -moz-crisp-edges !important;
+      image-rendering: -o-pixelated !important;
+      image-rendering: pixelated !important;
+}
+
+#tlInfHold #friendCon .strmLink {
+  line-break: anywhere;
+}
+
+#tlInfHold .frndQickJoin {
+  position: unset;
+}
+
+#tlInfHold .frndQickJoin span {
+  margin-top: 0px !important;
+}
+
+#tlInfHold .youNewDiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  padding: 1rem 1.8rem;
+  margin: 0;
+  margin-bottom: 0rem;
+  border-radius: 0px;
+  background: #ffffff0d;
+}
+
+#tlInfHold .youNewDiv > *:not(:last-child) {
+  margin-right: 1rem !important;
+}
+
+#tlInfHold .youNewDiv img,
+#tlInfHold .youNewDiv #updateAdIcon {
+  width: 50px;
+  height: 50px;
+  margin: 0;
+  padding: 0;
+  image-rendering: -webkit-optimize-contrast;
+}
+
+#tlInfHold .youNewDiv #helpTxtHol {
   font-family: var(--mainFont);
-  font-size: 20px;
-  margin-left: 1rem;
+  font-size: 1.4rem;
+  text-shadow: unset !important;
+  letter-spacing: 1px;
+}
+
+#tlInfHold .youNewDiv #helpTxtHol #helpGuidOpn,
+#tlInfHold .youNewDiv #helpTxtHol #updateAdVersion {
+  font-family: var(--subFont);
+  font-size: 1rem;
+  letter-spacing: unset;
+  color: var(--c_whiteST);
+}
+
+#tlInfHold #twitchDropsAd {
+  border-color: #9661f780;
+  background: #9661f780 !important;
+}
+
+#adCon {
+  display: none !important;
 }
 
 #menuWindow {

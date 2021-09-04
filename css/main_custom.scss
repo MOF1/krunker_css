@@ -2630,105 +2630,322 @@ input[type="checkbox"]:checked + .slider2:before {
 
 // Stream
 #tlInfHold {
-  clip-path: polygon(0 0, 100% 0, 100% 70px, 0 70px);
-  transition: clip-path 400ms 280ms ease;
-  top: 120px;
+  // clip-path: polygon(0 0, 100% 0, 100% 70px, 0 70px);
+  // transition: clip-path 400ms 280ms ease;
+  // top: 120px;
+  // left: unset;
+  // right: 7px;
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: -20px;
+    width: 20px;
+  }
+
+  &::before {
+    content: "keyboard_double_arrow_left";
+    font-family: "Material Icons";
+    position: absolute;
+    top: 12%;
+    left: -74px;
+    width: auto;
+    height: auto;
+    color: white;
+    display: grid;
+    place-content: center;
+    font-size: 3rem;
+    transition: opacity 200ms;
+  }
+
+  top: 0;
+  bottom: 0;
   left: unset;
-  right: 7px;
+  right: 0;
+  width: 360px;
+  backdrop-filter: blur(20px);
+  border-left: 4px solid #ffffff1c;
+  background: #ffffff1f;
+  z-index: 111111;
+  pointer-events: all;
 
-  #streamContainer {
-    background: transparent !important;
-    transition: background 400ms 280ms ease;
-    #streamCon {
-      display: block !important;
-    }
-    .strmCat {
-      color: white !important;
-      transition: color 400ms 280ms ease;
-    }
-  }
-
-  & > * {
-    &:not(#streamContainer) {
-      display: none !important;
-    }
-  }
+  right: -15.8%;
+  transition: right 800ms cubic-bezier(0.77, 0.01, 0.32, 0.99);
 
   &:hover {
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
-    transition: clip-path 280ms ease;
-    #streamContainer {
-      background: #00000080 !important;
-      transition: background 280ms ease;
-      .strmCat {
-        color: $accentColor !important;
-        transition: color 280ms ease;
+    right: 0;
+    &::before {
+      opacity: 0;
+    }
+  }
+
+  #streamContainer {
+    background: transparent;
+    color: var(--c_white);
+    margin: 0;
+    padding: 0;
+
+    #streamCon,
+    #friendCon {
+      display: block !important;
+    }
+
+    .streamItem {
+      // Header of the stream section
+      &:first-child {
+        margin: 0.5rem !important;
+        padding: 1rem;
+        border-radius: 5px;
+        font-family: var(--mainFont);
+
+        .strmCat {
+          font-family: var(--mainFont);
+          font-size: 2rem;
+          text-shadow: unset !important;
+          margin: 0 !important;
+        }
+      }
+
+      &:last-child {
+        margin-bottom: 2rem !important;
+      }
+
+      &:not(:first-child) {
+        margin: 0.5rem;
+        margin-bottom: 0.9rem;
+        padding: 0.5rem 1rem;
+
+        border-radius: 5px;
+        display: flex;
+        // Coz client doesnt suppot
+        // gap: 1rem;
+
+        // Alternative
+        & > *:not(:last-child) {
+          margin-right: 1rem !important;
+        }
+
+        align-items: center;
+        justify-content: flex-start;
+
+        .strmIcn {
+          background: transparent;
+          margin: 0;
+          width: 50px;
+          height: 50px;
+          image-rendering: -webkit-optimize-contrast;
+        }
+
+        .streamName {
+          width: 100%;
+          transform: translateY(-3px);
+
+          &:hover {
+            opacity: 1;
+          }
+
+          .strmLink {
+            font-family: var(--mainFont);
+            font-size: 1.4rem;
+            text-shadow: unset !important;
+            letter-spacing: 1px;
+          }
+          .strmPartner {
+            // display: inline-block !important;
+            margin: 0;
+
+            .streamPartner {
+              color: var(--c_whiteST);
+              margin-left: 2px;
+              top: 5px;
+            }
+          }
+
+          .strmViews {
+            font-family: var(--subFont);
+            font-size: 1rem;
+            color: var(--c_whiteST);
+          }
+        }
+
+        &:hover {
+          background: #ffffff1f;
+        }
       }
     }
   }
+
+  #friendCon {
+    .strmIcn {
+      border-radius: 5px;
+    }
+
+    .strmIcn[src*="./img/favicon.png"] {
+      image-rendering: pixelated !important;
+    }
+
+    .strmLink {
+      line-break: anywhere;
+    }
+  }
+
+  .frndQickJoin {
+    position: unset;
+    span {
+      margin-top: 0px !important;
+    }
+  }
+
+  .youNewDiv {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+
+    // Coz client doesnt suppot
+    // gap: 1rem;
+
+    // Alternative
+    & > *:not(:last-child) {
+      margin-right: 1rem !important;
+    }
+
+    padding: 1rem 1.8rem;
+    margin: 0;
+    margin-bottom: 0rem;
+    border-radius: 0px;
+    background: #ffffff0d;
+
+    img,
+    #updateAdIcon {
+      width: 50px;
+      height: 50px;
+      margin: 0;
+      padding: 0;
+      image-rendering: -webkit-optimize-contrast;
+    }
+
+    #helpTxtHol {
+      font-family: var(--mainFont);
+      font-size: 1.4rem;
+      text-shadow: unset !important;
+      letter-spacing: 1px;
+
+      #helpGuidOpn,
+      #updateAdVersion {
+        font-family: var(--subFont);
+        font-size: 1rem;
+        letter-spacing: unset;
+        color: var(--c_whiteST);
+      }
+    }
+  }
+
+  // Only for testing
+  // #twitchDropsAd,
+  // #krDiscountAd {
+  //   display: block !important;
+  // }
+
+  #twitchDropsAd {
+    border-color: #9661f780;
+    background: #9661f780 !important;
+  }
+
+  // #streamContainer {
+  //   background: transparent !important;
+  //   transition: background 400ms 280ms ease;
+  //   #streamCon {
+  //     display: block !important;
+  //   }
+  //   .strmCat {
+  //     color: white !important;
+  //     transition: color 400ms 280ms ease;
+  //   }
+  // }
+
+  // & > * {
+  //   &:not(#streamContainer) {
+  //     display: none !important;
+  //   }
+  // }
+
+  // &:hover {
+  //   clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+  //   transition: clip-path 280ms ease;
+  //   #streamContainer {
+  //     background: #00000080 !important;
+  //     transition: background 280ms ease;
+  //     .strmCat {
+  //       color: $accentColor !important;
+  //       transition: color 280ms ease;
+  //     }
+  //   }
+  // }
 }
 
 // Ad
-#krunkerio_300x250_4 {
+#adCon {
   display: none !important;
 }
 
-#streamContainer {
-  background: $primaryBg;
-  padding: 1.5rem;
-  border-radius: 0;
-  left: 125px;
-  letter-spacing: 0.06rem;
-  padding-bottom: 0px;
+// #streamContainer {
+//   background: $primaryBg;
+//   padding: 1.5rem;
+//   border-radius: 0;
+//   left: 125px;
+//   letter-spacing: 0.06rem;
+//   padding-bottom: 0px;
 
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+//   display: flex;
+//   flex-direction: column;
+//   align-items: flex-start;
 
-  .streamItem {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: center;
-    margin-bottom: 1.2rem;
-    .strmCat {
-      font-family: $mainFont;
-      font-size: 2rem;
-      color: $accentColor;
-      margin-bottom: 0.2rem;
-      text-align: right;
-    }
+//   .streamItem {
+//     display: flex;
+//     flex-direction: row;
+//     align-items: center;
+//     justify-content: center;
+//     margin-bottom: 1.2rem;
+//     .strmCat {
+//       font-family: $mainFont;
+//       font-size: 2rem;
+//       color: $accentColor;
+//       margin-bottom: 0.2rem;
+//       text-align: right;
+//     }
 
-    .youtube {
-      text-shadow: none;
-    }
-    .twitch {
-      text-shadow: none;
-    }
+//     .youtube {
+//       text-shadow: none;
+//     }
+//     .twitch {
+//       text-shadow: none;
+//     }
 
-    .streamName {
-      font-family: $mainFont;
-      font-size: 20px;
-      .strmLink {
-        font-family: $mainFont;
-        font-size: 18px;
-      }
-      .blackShad {
-        text-shadow: none;
-      }
-      .strmViews {
-        font-family: $subFont;
-        font-size: 18px;
-        display: none;
-      }
-      .strmIcn {
-        font-family: $mainFont;
-        font-size: 20px;
-        margin-left: 1rem;
-      }
-    }
-  }
-}
+//     .streamName {
+//       font-family: $mainFont;
+//       font-size: 20px;
+//       .strmLink {
+//         font-family: $mainFont;
+//         font-size: 18px;
+//       }
+//       .blackShad {
+//         text-shadow: none;
+//       }
+//       .strmViews {
+//         font-family: $subFont;
+//         font-size: 18px;
+//         display: none;
+//       }
+//       .strmIcn {
+//         font-family: $mainFont;
+//         font-size: 20px;
+//         margin-left: 1rem;
+//       }
+//     }
+//   }
+// }
 
 // New Standalone props
 #menuWindow {
