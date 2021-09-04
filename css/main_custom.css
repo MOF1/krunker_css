@@ -186,7 +186,7 @@ input[type="color"] {
 .hostPresetBtn {
   all: unset;
   font-family: var(--subFont);
-  background: var(--primaryBg);
+  background: var(--primaryBg) !important;
   -webkit-filter: brightness(1.4);
   filter: brightness(1.4);
   padding: 1rem 1rem;
@@ -196,20 +196,66 @@ input[type="color"] {
   cursor: pointer;
 }
 
+.settingsBtn:hover,
+.hostPresetBtn:hover {
+  -webkit-filter: brightness(1);
+          filter: brightness(1);
+}
+
+.settingsHeader div[style="display:inline-block;text-align:right;float:right;"] {
+  margin-top: 7px;
+}
+
 .settingsHeader div[style="display:inline-block;text-align:right;float:right;"] .settingsBtn:nth-child(1) {
-  color: var(--orange) !important;
+  color: var(--accentColor) !important;
+}
+
+.settingsHeader div[style="display:inline-block;text-align:right;float:right;"] .settingsBtn:nth-child(1):hover {
+  color: var(--primaryBg) !important;
+  background: var(--accentColor) !important;
 }
 
 .settingsHeader div[style="display:inline-block;text-align:right;float:right;"] .settingsBtn:nth-child(2) {
-  color: var(--green) !important;
+  color: var(--orange) !important;
+}
+
+.settingsHeader div[style="display:inline-block;text-align:right;float:right;"] .settingsBtn:nth-child(2):hover {
+  color: var(--primaryBg) !important;
+  background: var(--orange) !important;
 }
 
 .settingsHeader div[style="display:inline-block;text-align:right;float:right;"] .settingsBtn:nth-child(3) {
+  color: var(--green) !important;
+}
+
+.settingsHeader div[style="display:inline-block;text-align:right;float:right;"] .settingsBtn:nth-child(3):hover {
+  color: var(--primaryBg) !important;
+  background: var(--green) !important;
+}
+
+.settingsHeader div[style="display:inline-block;text-align:right;float:right;"] .settingsBtn:nth-child(4) {
   color: var(--purple) !important;
+}
+
+.settingsHeader div[style="display:inline-block;text-align:right;float:right;"] .settingsBtn:nth-child(4):hover {
+  color: var(--primaryBg) !important;
+  background: var(--purple) !important;
 }
 
 .settingsHeader div[style="display:inline-block;text-align:right;float:right;"] .settingsBtn:last-child {
   margin-right: 1rem;
+}
+
+.settingsHeader div[style="display:inline-block;text-align:right;float:right;"] .settingsBtn:last-child:hover {
+  color: var(--primaryBg) !important;
+  background: var(--orange) !important;
+}
+
+.settingsHeader div[style="display:inline-block;text-align:right;float:right;"] #settingsPreset {
+  height: 3.46rem;
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  margin-left: 1rem !important;
 }
 
 #settSearch {

@@ -168,7 +168,7 @@ input[type="color"] {
 .hostPresetBtn {
   all: unset;
   font-family: var(--subFont);
-  background: var(--primaryBg);
+  background: var(--primaryBg) !important;
   -webkit-filter: brightness(1.4);
   filter: brightness(1.4);
   padding: 1rem 1rem;
@@ -176,26 +176,67 @@ input[type="color"] {
   font-size: 1.2rem;
   letter-spacing: 2px;
   cursor: pointer;
+
+  &:hover {
+    filter: brightness(1);
+  }
 }
 
 .settingsHeader {
   div[style="display:inline-block;text-align:right;float:right;"] {
+    margin-top: 7px;
+
     .settingsBtn {
       &:nth-child(1) {
-        color: $orange !important;
+        color: $accentColor !important;
+
+        &:hover {
+          color: $primaryBg !important;
+          background: $accentColor !important;
+        }
       }
 
       &:nth-child(2) {
-        color: $green !important;
+        color: $orange !important;
+
+        &:hover {
+          color: $primaryBg !important;
+          background: $orange !important;
+        }
       }
 
       &:nth-child(3) {
+        color: $green !important;
+
+        &:hover {
+          color: $primaryBg !important;
+          background: $green !important;
+        }
+      }
+
+      &:nth-child(4) {
         color: $purple !important;
+
+        &:hover {
+          color: $primaryBg !important;
+          background: $purple !important;
+        }
       }
 
       &:last-child {
         margin-right: 1rem;
+
+        &:hover {
+          color: $primaryBg !important;
+          background: $orange !important;
+        }
       }
+    }
+
+    #settingsPreset {
+      height: 3.46rem;
+      transform: translateY(-5px);
+      margin-left: 1rem !important;
     }
   }
 }
