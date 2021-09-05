@@ -3200,6 +3200,7 @@ $blurBg: #ffffff1f;
   justify-content: flex-start;
   border-bottom: $border;
   pointer-events: all;
+  border-radius: 0px !important;
   //gap: 1rem;
 
   .verticalSeparator {
