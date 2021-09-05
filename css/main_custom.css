@@ -3204,7 +3204,7 @@ span[style*="color:#F8C55C"] {
   background-image: -webkit-gradient(linear, left top, right top, from(var(--gradientColor4)), to(var(--gradientColor3)));
   background-image: linear-gradient(to right, var(--gradientColor4), var(--gradientColor3));
   border-radius: 100px;
-  z-index: 22;
+  z-index: 0;
   border-bottom-right-radius: 0px;
   border-top-right-radius: 0px;
 }
