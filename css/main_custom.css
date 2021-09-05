@@ -1219,7 +1219,7 @@ input[type="checkbox"]:checked + .slider2:before {
   background: #ffffff1f;
   z-index: 111111;
   pointer-events: all;
-  right: -15.8%;
+  right: -365px;
   -webkit-transition: right 800ms cubic-bezier(0.77, 0.01, 0.32, 0.99);
   transition: right 800ms cubic-bezier(0.77, 0.01, 0.32, 0.99);
 }

@@ -2669,18 +2669,20 @@ input[type="checkbox"]:checked + .slider2:before {
     transition: opacity 200ms;
   }
 
+  $border_size: 4px;
+  $width_container: 360px;
   top: 0;
   bottom: 0;
   left: unset;
   right: 0;
-  width: 360px;
+  width: $width_container;
   backdrop-filter: blur(20px);
-  border-left: 4px solid #ffffff1c;
+  border-left: $border_size solid #ffffff1c;
   background: #ffffff1f;
   z-index: 111111;
   pointer-events: all;
 
-  right: -15.8%;
+  right: ($border_size + $width_container + 1) * -1;
   transition: right 800ms cubic-bezier(0.77, 0.01, 0.32, 0.99);
 
   &:hover {
