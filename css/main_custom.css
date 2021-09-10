@@ -1213,8 +1213,8 @@ input[type="checkbox"]:checked + .slider2:before {
   left: unset;
   right: 0;
   width: 360px;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(var(--blur-radius1, 20px));
+          backdrop-filter: blur(var(--blur-radius1, 20px));
   border-left: 4px solid #ffffff1c;
   background: #ffffff1f;
   z-index: 111111;
@@ -1535,8 +1535,8 @@ input[type="checkbox"]:checked + .slider2:before {
   width: 130px;
   height: 100%;
   padding-top: 5rem;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(var(--blur-radius1, 20px));
+          backdrop-filter: blur(var(--blur-radius1, 20px));
   border-right: 4px solid #ffffff1c;
   background: #ffffff1f;
   display: -webkit-box;
@@ -1646,8 +1646,8 @@ input[type="checkbox"]:checked + .slider2:before {
   position: fixed;
   top: 0;
   background: #ffffff1f;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(var(--blur-radius1, 20px));
+          backdrop-filter: blur(var(--blur-radius1, 20px));
   height: 100px;
   width: calc(100% - 120px - 4.84rem);
   right: 0;
@@ -1679,8 +1679,8 @@ input[type="checkbox"]:checked + .slider2:before {
   position: fixed;
   top: 0;
   background: #ffffff1f;
-  -webkit-backdrop-filter: blur(20px);
-          backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(var(--blur-radius1, 20px));
+          backdrop-filter: blur(var(--blur-radius1, 20px));
   height: 100px;
   width: calc(100% - 120px - 2.8rem);
   right: 0;
@@ -3155,8 +3155,8 @@ input[type="checkbox"]:checked + .slider2:before {
 }
 
 .matchVote .matchVoteTotal[style*="color: rgb(251, 192, 45)"]::after {
-  -webkit-backdrop-filter: blur(5px);
-          backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(var(--blur-radius2, 5px));
+          backdrop-filter: blur(var(--blur-radius2, 5px));
 }
 
 .matchVote .matchVoteThumb {
