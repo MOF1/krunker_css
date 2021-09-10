@@ -5462,15 +5462,24 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
 // Init loader
 #initLoader {
   background-color: $primaryBg;
+  background-image: var(
+    --splash-logo,
+    url("https://www.krunker.io/img/logo_1.png")
+  );
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 153px;
+
   & > *:first-child {
     display: none !important;
   }
 
   #loadHeader {
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    height: 153px;
+    // left: 50%;
+    // top: 50%;
+    // transform: translate(-50%, -50%);
+    // height: 153px;
+    display: none;
   }
 
   #loadGamNm {

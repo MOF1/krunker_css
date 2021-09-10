@@ -4067,6 +4067,10 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
 
 #initLoader {
   background-color: var(--primaryBg);
+  background-image: var(--splash-logo, url("https://www.krunker.io/img/logo_1.png"));
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 153px;
 }
 
 #initLoader > *:first-child {
@@ -4074,11 +4078,7 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
 }
 
 #initLoader #loadHeader {
-  left: 50%;
-  top: 50%;
-  -webkit-transform: translate(-50%, -50%);
-          transform: translate(-50%, -50%);
-  height: 153px;
+  display: none;
 }
 
 #initLoader #loadGamNm {
