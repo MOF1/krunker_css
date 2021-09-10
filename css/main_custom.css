@@ -1563,7 +1563,7 @@ input[type="checkbox"]:checked + .slider2:before {
   width: 100%;
   aspect-ratio: 1 / 1;
   height: 120px;
-  background-image: url("https://www.krunker.io/img/krunker.png");
+  background-image: var(--sidebar-logo, url("https://www.krunker.io/img/krunker.png"));
   background-size: 50%;
   background-position: center;
   background-repeat: no-repeat;
