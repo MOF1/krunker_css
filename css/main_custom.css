@@ -3808,6 +3808,45 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
   font-size: 1.4rem !important;
 }
 
+.mapListCat + div[style*="margin-top:10px;"] {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (1fr)[3];
+      grid-template-columns: repeat(3, 1fr);
+  gap: 1.2rem;
+}
+
+.challMapCrd {
+  margin: 0;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 16 / 9;
+  border: none;
+}
+
+.challMapCrd .challMapName {
+  font-family: var(--mainFont);
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  text-shadow: none;
+  text-align: left;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 20px;
+}
+
+.challMapCrd .challMapName .challMapPrg {
+  font-size: 2rem;
+  letter-spacing: 8px;
+  font-family: var(--subFont);
+  font-weight: normal;
+}
+
+.challMapCrd .challMapName .challMapPrg::first-letter {
+  font-size: 3rem;
+  font-family: var(--mainFont);
+}
+
 #statHolder {
   display: -ms-grid;
   display: grid;
