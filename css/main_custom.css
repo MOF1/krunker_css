@@ -2498,7 +2498,7 @@ input[type="checkbox"]:checked + .slider2:before {
 }
 
 #bottomLeftHolder #hudClassIcon #hudClassImg {
-  opacity: var(--my-logo-op, 1);
+  opacity: var(--profile-pic-op, 1);
 }
 
 #bottomLeftHolder #hudClassIcon::after {
@@ -2508,7 +2508,7 @@ input[type="checkbox"]:checked + .slider2:before {
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: var(--my-logo);
+  background-image: var(--profile-pic);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -3054,7 +3054,7 @@ input[type="checkbox"]:checked + .slider2:before {
 }
 
 #endTabbedView #endTable td .endTableN[style="color:#fff"]::before {
-  content: var(--my-logo-sp, unset);
+  content: var(--profile-pic-sp, unset);
   position: absolute;
   left: -54px;
   top: -5px;
@@ -3062,7 +3062,7 @@ input[type="checkbox"]:checked + .slider2:before {
   height: 40px;
   border-radius: 100px;
   background: var(--primaryBg);
-  background-image: var(--my-logo);
+  background-image: var(--profile-pic);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -3730,9 +3730,9 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
   bottom: 0;
   left: 0;
   right: 0;
-  background-image: var(--my-logo, url("https://assets.krunker.io/textures/classes/icon_0.png"));
-  -webkit-filter: var(--my-logo, grayscale(1) opacity(0.5));
-          filter: var(--my-logo, grayscale(1) opacity(0.5));
+  background-image: var(--profile-pic, url("https://assets.krunker.io/textures/classes/icon_0.png"));
+  -webkit-filter: var(--profile-pic, grayscale(1) opacity(0.5));
+          filter: var(--profile-pic, grayscale(1) opacity(0.5));
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;

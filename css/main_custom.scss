@@ -3908,7 +3908,7 @@ $blurBg: #ffffff1f;
     position: relative;
 
     #hudClassImg {
-      opacity: var(--my-logo-op, 1);
+      opacity: var(--profile-pic-op, 1);
     }
 
     &::after {
@@ -3918,7 +3918,7 @@ $blurBg: #ffffff1f;
       bottom: 0;
       left: 0;
       right: 0;
-      background-image: var(--my-logo);
+      background-image: var(--profile-pic);
       background-repeat: no-repeat;
       background-size: cover;
       background-position: center;
@@ -4406,7 +4406,7 @@ $blurBg: #ffffff1f;
         //animation: rainbow 1000ms linear infinite !important;
         position: relative;
         &::before {
-          content: var(--my-logo-sp, unset);
+          content: var(--profile-pic-sp, unset);
           position: absolute;
           left: -54px;
           top: -5px;
@@ -4414,7 +4414,7 @@ $blurBg: #ffffff1f;
           height: 40px;
           border-radius: 100px;
           background: $primaryBg;
-          background-image: var(--my-logo);
+          background-image: var(--profile-pic);
           background-repeat: no-repeat;
           background-size: cover;
           background-position: center;
@@ -5089,10 +5089,10 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
     left: 0;
     right: 0;
     background-image: var(
-      --my-logo,
+      --profile-pic,
       url("https://assets.krunker.io/textures/classes/icon_0.png")
     );
-    filter: var(--my-logo, grayscale(1) opacity(0.5));
+    filter: var(--profile-pic, grayscale(1) opacity(0.5));
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
