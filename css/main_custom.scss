@@ -3905,6 +3905,25 @@ $blurBg: #ffffff1f;
     margin-bottom: 10px;
     display: inline-block;
     background-color: transparent;
+    position: relative;
+
+    #hudClassImg {
+      opacity: var(--my-logo-op, 1);
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-image: var(--my-logo);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: center;
+      z-index: -1;
+    }
   }
   #healthValueHolder {
     right: 0;
@@ -4385,6 +4404,23 @@ $blurBg: #ffffff1f;
     td {
       .endTableN[style="color:#fff"] {
         //animation: rainbow 1000ms linear infinite !important;
+        position: relative;
+        &::before {
+          content: var(--my-logo-sp, unset);
+          position: absolute;
+          left: -54px;
+          top: -5px;
+          width: 40px;
+          height: 40px;
+          border-radius: 100px;
+          background: $primaryBg;
+          background-image: var(--my-logo);
+          background-repeat: no-repeat;
+          background-size: cover;
+          background-position: center;
+          color: transparent;
+          image-rendering: optimizeQuality;
+        }
       }
       a .endTableN {
         span {
@@ -5036,6 +5072,40 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
 
 #profilePicM {
   margin-top: 0.85rem;
+  border-color: var(--subBgST);
+  background: var(--subBgST);
+
+  img[src*="https://assets.krunker.io"]
+  {
+    image-rendering: pixelated !important;
+    opacity: 0;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-image: var(
+      --my-logo,
+      url("https://assets.krunker.io/textures/classes/icon_0.png")
+    );
+    filter: var(--my-logo, grayscale(1) opacity(0.5));
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    image-rendering: optimizeQuality !important;
+    border-radius: 100px;
+    z-index: -1;
+  }
+
+  &.blurred {
+    filter: unset !important;
+    image-rendering: unset;
+  }
 }
 
 .setBodH[style="display:inline-block;padding-top:10px;vertical-align:top;width:680px;margin-left:15px;margin-top:0px;"] {
