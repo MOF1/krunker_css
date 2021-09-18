@@ -2508,6 +2508,9 @@ input[type="checkbox"]:checked + .slider2:before {
   bottom: 0;
   left: 0;
   right: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: 7px;
   background-image: var(--profile-pic);
   background-repeat: no-repeat;
   background-size: cover;
@@ -3068,6 +3071,10 @@ input[type="checkbox"]:checked + .slider2:before {
   background-position: center;
   color: transparent;
   image-rendering: optimizeQuality;
+}
+
+#endTabbedView #endTable td .endTableFlag {
+  z-index: 1;
 }
 
 #endTabbedView #endTable td a .endTableN span {
