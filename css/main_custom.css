@@ -3123,6 +3123,20 @@ input[type="checkbox"]:checked + .slider2:before {
   margin-top: 10px;
   border-radius: 4px;
   text-shadow: none;
+  border-color: var(--primaryBg);
+}
+
+.matchVote .matchVoteModifier {
+  top: 0;
+  bottom: unset;
+  right: 0;
+  left: unset;
+  border-radius: 0px;
+  border-bottom-left-radius: 10px;
+  margin: 0;
+  font-size: 16px !important;
+  padding: 0.2rem 0.5rem;
+  font-family: var(--subFont);
 }
 
 .matchVote .matchVoteMap {
