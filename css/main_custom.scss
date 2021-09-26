@@ -461,7 +461,6 @@ input[type="color"] {
 // }
 
 #voiceDisplay {
-  left: 469px;
   bottom: 18px;
 
   #recTimer {
@@ -3248,6 +3247,7 @@ $blurBg: #ffffff1f;
       margin-right: 0.5rem;
       line-height: 60px;
       span {
+        color: white !important;
         font-size: 1.7rem;
         font-family: $mainFont;
       }
@@ -3256,6 +3256,18 @@ $blurBg: #ffffff1f;
     .krSocial {
       display: none;
       // margin-right: 0.5rem;
+    }
+  }
+
+  .junkInfo #menuJNKCount {
+    font-family: var(--mainFont);
+    font-size: 1.7rem;
+
+    span {
+      margin-left: 12px !important;
+      margin-right: 0px !important;
+      font-size: 2rem !important;
+      filter: brightness(2);
     }
   }
 
@@ -3328,7 +3340,7 @@ $blurBg: #ffffff1f;
   background: transparent;
 
   height: 100px;
-  width: calc(100% - 120px - 4.84rem);
+  // width: calc(100% - 120px - 4.84rem);
   right: 0;
   padding: 0.5rem 2rem;
   display: flex;
@@ -3336,6 +3348,7 @@ $blurBg: #ffffff1f;
   align-items: center;
   justify-content: flex-end;
   border-bottom: $border;
+  pointer-events: auto;
   //gap: 1rem;
 
   #menuServerInfoContainer {
@@ -3407,6 +3420,15 @@ $blurBg: #ffffff1f;
   .discordSocial,
   .verticalSeparator {
     display: none !important;
+  }
+
+  .menuSocialB[onclick*="openDiscord()"] {
+    margin-right: 40px !important;
+    margin-left: 40px !important;
+  }
+
+  .menuSocialB {
+    cursor: pointer;
   }
 }
 
@@ -5072,9 +5094,19 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
     opacity: 0.4;
   }
 
+  .bigMenTab {
+    span.material-icons[style*="color:#fbc02d"] {
+      color: var(--c_whiteST) !important;
+    }
+  }
+
   .bigMenTabA {
     color: $c_white !important;
     border-bottom: 5px solid $accentColor !important;
+
+    span.material-icons[style*="color:#fbc02d"] {
+      color: var(--accentColor) !important;
+    }
   }
 }
 

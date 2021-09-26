@@ -340,7 +340,6 @@ input[type="color"] {
 }
 
 #voiceDisplay {
-  left: 469px;
   bottom: 18px;
 }
 
@@ -1753,12 +1752,26 @@ input[type="checkbox"]:checked + .slider2:before {
 }
 
 #signedInHeaderBar .krInfo #menuKRCount span {
+  color: white !important;
   font-size: 1.7rem;
   font-family: var(--mainFont);
 }
 
 #signedInHeaderBar .krInfo .krSocial {
   display: none;
+}
+
+#signedInHeaderBar .junkInfo #menuJNKCount {
+  font-family: var(--mainFont);
+  font-size: 1.7rem;
+}
+
+#signedInHeaderBar .junkInfo #menuJNKCount span {
+  margin-left: 12px !important;
+  margin-right: 0px !important;
+  font-size: 2rem !important;
+  -webkit-filter: brightness(2);
+          filter: brightness(2);
 }
 
 #signedInHeaderBar #mailContainer #mailIcon:hover {
@@ -1829,7 +1842,6 @@ input[type="checkbox"]:checked + .slider2:before {
   top: 0;
   background: transparent;
   height: 100px;
-  width: calc(100% - 120px - 4.84rem);
   right: 0;
   padding: 0.5rem 2rem;
   display: -webkit-box;
@@ -1846,6 +1858,7 @@ input[type="checkbox"]:checked + .slider2:before {
       -ms-flex-pack: end;
           justify-content: flex-end;
   border-bottom: 4px solid #ffffff1c;
+  pointer-events: auto;
 }
 
 #headerRight #menuServerInfoContainer {
@@ -1916,6 +1929,15 @@ input[type="checkbox"]:checked + .slider2:before {
 #headerRight .discordSocial,
 #headerRight .verticalSeparator {
   display: none !important;
+}
+
+#headerRight .menuSocialB[onclick*="openDiscord()"] {
+  margin-right: 40px !important;
+  margin-left: 40px !important;
+}
+
+#headerRight .menuSocialB {
+  cursor: pointer;
 }
 
 #aHider {
@@ -3710,9 +3732,17 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
   opacity: 0.4;
 }
 
+.bigMenTabs .bigMenTab span.material-icons[style*="color:#fbc02d"] {
+  color: var(--c_whiteST) !important;
+}
+
 .bigMenTabs .bigMenTabA {
   color: var(--c_white) !important;
   border-bottom: 5px solid var(--accentColor) !important;
+}
+
+.bigMenTabs .bigMenTabA span.material-icons[style*="color:#fbc02d"] {
+  color: var(--accentColor) !important;
 }
 
 #profilePicM {
