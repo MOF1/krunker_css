@@ -39,19 +39,19 @@ $buttomBarHeight: var(--buttomBarHeight);
 // }
 
 @font-face {
-  src: url(../css/fonts/Steradian-Bold.otf);
+  src: url("https://raw.githubusercontent.com/MOF1/krunker_css/main/css/fonts/Steradian-Bold.otf");
   font-family: steradian;
   font-weight: 900;
 }
 
 @font-face {
-  src: url(../css/fonts/EuclidCircularA-Medium.ttf);
+  src: url("https://raw.githubusercontent.com/MOF1/krunker_css/main/css/fonts/EuclidCircularA-Medium.ttf");
   font-family: cirular;
 }
 
 @font-face {
   font-family: customF;
-  src: url(../css/fonts/Steradian-Bold.otf);
+  src: url("https://raw.githubusercontent.com/MOF1/krunker_css/main/css/fonts/Steradian-Bold.otf");
 }
 
 @keyframes anima {
