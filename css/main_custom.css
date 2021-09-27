@@ -4254,7 +4254,7 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
   right: 0;
   color: transparent !important;
   height: 120px;
-  background-image: url("https://www.krunker.io/img/spinner.svg");
+  background-image: var(--spinner-url, url("https://www.krunker.io/img/spinner.svg"));
   background-repeat: no-repeat;
   background-position: center;
 }
