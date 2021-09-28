@@ -5288,7 +5288,6 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
       border-radius: 100px !important;
       background: var(--subBgST) !important;
       margin-top: 40px;
-      overflow: hidden;
       height: 24px;
       .chalXPBarC {
         background: linear-gradient(
@@ -5823,4 +5822,55 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
 }
 
 .mapActionB.sel {
+}
+
+// Junk yard
+.bigMFeatHold {
+  height: 300px;
+  #bigMFeatDesc2 {
+    font-family: var(--subFont);
+    line-height: 2.5rem;
+    font-size: 1.4rem;
+    background: transparent;
+    backdrop-filter: unset;
+    padding: 0px;
+    text-shadow: 0px 0px 10px #0000005e;
+  }
+}
+
+.crftRcpeCrd {
+  background: var(--subBgST);
+
+  .craftRcIcn {
+    border-color: transparent !important;
+    background-color: var(--subBgST);
+    background-image: 100%;
+  }
+
+  .craftRiHl {
+    .crftItmNm {
+      font-family: var(--mainFont);
+      font-size: 2.1rem;
+      width: 220px;
+    }
+    .crftItmNm[style*="#292929"] {
+      color: var(--c_white) !important;
+    }
+
+    .crftItmReq {
+      border-color: transparent;
+      background-color: var(--subBgST);
+    }
+
+    .crftItmJnk {
+      font-family: var(--mainFont);
+      font-size: 2rem;
+    }
+
+    .crftTim {
+      margin-top: 17px;
+      background: var(--subBg);
+      font-family: var(--subFont);
+    }
+  }
 }
