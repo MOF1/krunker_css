@@ -5285,6 +5285,9 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
     font-size: 2.2rem;
     letter-spacing: 1px;
 
+    display: inline-grid;
+    grid-template-columns: 1fr 20%;
+
     .chalDesc {
       font-family: var(--subFont);
       font-size: 1.4rem;
@@ -5294,6 +5297,9 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
     .chalExpr {
       font-size: 26px;
       font-family: var(--subFont);
+      align-self: end;
+      text-align: right;
+      padding-bottom: 1rem;
     }
 
     .chalXPBar {
@@ -5302,6 +5308,7 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
       background: var(--subBgST) !important;
       margin-top: 40px;
       height: 24px;
+      grid-column: 2 span;
       .chalXPBarC {
         background: linear-gradient(
           to right,
