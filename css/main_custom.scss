@@ -2531,7 +2531,7 @@ input[type="checkbox"]:checked + .slider2:before {
 
 //   a {
 //     font-size: 22px !important;
-//     font-family: var(--main_font) !important;
+//     font-family: var(--mainFont) !important;
 //   }
 
 //   #freeKRClaimTxt {
@@ -5225,7 +5225,7 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
       }
 
       div {
-        font-family: var(--main_font);
+        font-family: var(--mainFont);
       }
     }
   }
@@ -5578,7 +5578,7 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
     font-family: var(--subFont);
     font-size: 26px;
     a {
-      font-family: var(--main_font);
+      font-family: var(--mainFont);
       letter-spacing: 1px;
       font-weight: 600;
     }
@@ -5607,7 +5607,7 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
   font-size: 1.3rem;
 
   a {
-    font-family: var(--main_font);
+    font-family: var(--mainFont);
     letter-spacing: 1px;
     font-weight: 600;
   }
@@ -5741,11 +5741,13 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
 #bigMFeatName {
   font-family: var(--mainFont);
   font-size: 3rem;
+  top: 2rem !important;
 }
 
 #bigMFeatVbar {
   font-size: 1.7rem;
   font-family: var(--subFont);
+  top: 7rem !important;
 
   & > div {
     display: none !important;
@@ -5779,7 +5781,7 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
 #bigMFeatHBtn[onclick*="selectHostMap("] {
   background: var(--subBgST);
   color: white !important;
-  bottom: 8.5%;
+  bottom: 9.7%;
   right: 25%;
   border-radius: 100px;
   padding: 0.4rem 2rem !important;
@@ -5794,6 +5796,14 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
 }
 
 #modList {
+}
+
+a.menuLink[href*="mods&openPubMo"] + div {
+  font-family: var(--subFont);
+  font-size: 1.8rem;
+  span {
+    font-family: var(--mainFont);
+  }
 }
 
 .mapListItem {
@@ -5835,6 +5845,37 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
 }
 
 .mapActionB.sel {
+}
+
+.likdByFrnd {
+  font-family: var(--subFont);
+
+  span:not(.material-icons) {
+    font-family: var(--mainFont);
+  }
+}
+
+// Game section
+.bigMFeatHold {
+  #bigMFeatVid {
+    width: 276px;
+    height: 155px;
+  }
+
+  #bigMFeatVbar {
+    span:not(.material-icons) {
+      font-family: var(--subFont);
+    }
+  }
+
+  #bigMFeatDesc {
+    width: 680px;
+    font-family: var(--subFont);
+    font-size: 1.4rem;
+    line-height: 2.3rem;
+    margin-top: 0.3rem;
+    bottom: 25px;
+  }
 }
 
 // Junk yard
