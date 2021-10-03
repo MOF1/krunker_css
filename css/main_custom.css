@@ -917,6 +917,22 @@ input[type="checkbox"]:checked + .slider2:before {
 
 #itemSearchH {
   background: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  gap: 1rem;
+}
+
+#itemSearchH .custBack {
+  background: var(--subBgST);
+  border-radius: 100px;
+  display: -ms-grid;
+  display: grid;
+  place-content: center;
+  width: 5rem;
+  height: 4.5rem;
+  padding: 0;
+  margin: 0;
 }
 
 #itemSearchH #itemSearch {
