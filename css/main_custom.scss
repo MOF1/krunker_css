@@ -3560,16 +3560,16 @@ $blurBg: #ffffff1f;
 
   display: grid !important;
   grid-template-columns: repeat(6, 1fr);
-  align-items: center;
+  align-items: flex-start;
   justify-content: flex-start;
   gap: 10px;
 
   width: calc(450px - 2rem);
-  min-height: 20px;
+  min-height: 200px;
   padding: 1rem;
 
   background: var(--primaryBg);
-  clip-path: polygon(0 0, 100% 0, 100% 40%, 0 40%);
+  clip-path: polygon(0 0, 100% 0, 100% 95px, 0 95px);
 
   transition: clip-path 300ms ease;
   pointer-events: initial;
