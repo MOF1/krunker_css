@@ -2819,6 +2819,7 @@ input[type="checkbox"]:checked + .slider2:before {
       font-size: 1.4rem;
       text-shadow: unset !important;
       letter-spacing: 1px;
+      width: calc(100% - 4.8rem);
 
       #helpGuidOpn,
       #updateAdVersion {
