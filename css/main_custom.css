@@ -693,6 +693,9 @@ input[type="checkbox"]:checked + .slider2:before {
   display: grid;
   -ms-grid-columns: 1fr 1fr 1fr;
       grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-rows: min-content;
+      grid-template-rows: -webkit-min-content;
+      grid-template-rows: min-content;
   gap: 20px;
   padding: 1rem;
   height: calc(100% - 142px) !important;
@@ -764,9 +767,14 @@ input[type="checkbox"]:checked + .slider2:before {
   margin-top: unset;
   margin-bottom: unset;
   position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
   height: 100%;
-  width: auto;
-  right: 40px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 #skinList .skinCard .skinImgC {
@@ -1139,6 +1147,10 @@ input[type="checkbox"]:checked + .slider2:before {
   text-shadow: none !important;
 }
 
+#customizeContainer .custContainer .settLabel[style*="color:#292929"] {
+  color: var(--accentColor) !important;
+}
+
 #customizeContainer .custContainer .selRandom {
   font-family: var(--mainFont);
 }
@@ -1148,6 +1160,50 @@ input[type="checkbox"]:checked + .slider2:before {
   left: 0;
   padding: 10px;
   padding-top: 20px;
+}
+
+#customizeContainer .custContainer[onclick*="(16)"] .settLabel,
+#customizeContainer .custContainer[onclick*="(39)"] .settLabel,
+#customizeContainer .custContainer[onclick*="(17)"] .settLabel,
+#customizeContainer .custContainer[onclick*="(34)"] .settLabel,
+#customizeContainer .custContainer[onclick*="(38)"] .settLabel,
+#customizeContainer .custContainer[onclick*="(40)"] .settLabel,
+#customizeContainer .custContainer[onclick*="(43)"] .settLabel,
+#customizeContainer .custContainer[onclick*="(9)"] .settLabel {
+  display: none !important;
+}
+
+#customizeContainer .custContainer[onclick*="(16)"] .custItNm,
+#customizeContainer .custContainer[onclick*="(39)"] .custItNm,
+#customizeContainer .custContainer[onclick*="(17)"] .custItNm,
+#customizeContainer .custContainer[onclick*="(34)"] .custItNm,
+#customizeContainer .custContainer[onclick*="(38)"] .custItNm,
+#customizeContainer .custContainer[onclick*="(40)"] .custItNm,
+#customizeContainer .custContainer[onclick*="(43)"] .custItNm,
+#customizeContainer .custContainer[onclick*="(9)"] .custItNm {
+  display: block;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  position: absolute;
+  font-size: 22px;
+  font-family: var(--mainFont);
+  letter-spacing: 2;
+  text-shadow: none !important;
+}
+
+#customizeContainer .custIcon {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  -o-object-fit: contain;
+     object-fit: contain;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
 }
 
 .hostMap {
