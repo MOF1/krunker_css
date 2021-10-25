@@ -3474,6 +3474,34 @@ $blurBg: #ffffff1f;
   margin-left: 9rem;
 }
 
+#menuBtnRanked {
+  pointer-events: initial;
+  #rankedSoonTm {
+    top: unset;
+    bottom: -62px;
+    border: none;
+    background: #ffffff1f;
+    font-family: var(--subFont);
+    font-size: 1.3rem;
+    font-weight: 100;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 300ms, transform 300ms;
+
+    &::before {
+      bottom: unset;
+      top: -9px;
+      transform: translateX(-50%) rotate(180deg);
+      border-top: 9px solid white;
+    }
+  }
+
+  &:hover #rankedSoonTm {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
 .button {
   background-color: transparent;
   font-family: var(--mainFont);
