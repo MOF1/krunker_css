@@ -5232,6 +5232,12 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
   }
 }
 
+.settName a[onclick*="showWindow(13)"] {
+  font-family: var(--mainFont);
+  letter-spacing: 1px;
+  font-size: 1.8rem;
+}
+
 .setBodH {
   .settName {
     .floatR {
@@ -5508,7 +5514,7 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
     text-shadow: unset !important;
     margin: 0 !important;
     width: 100% !important;
-    height: 7rem;
+    height: 10rem;
     display: grid;
     place-content: center;
     gap: 0.5rem;
