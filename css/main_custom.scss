@@ -5164,7 +5164,8 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
   }
 
   .bigMenTab {
-    span.material-icons[style*="color:#fbc02d"] {
+    span.material-icons[style*="color:#fbc02d"],
+    span.material-icons-outlined[style*="color:#fbc02d"] {
       color: var(--c_whiteST) !important;
     }
   }
@@ -5173,7 +5174,8 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
     color: var(--c_white) !important;
     border-bottom: 5px solid var(--accentColor) !important;
 
-    span.material-icons[style*="color:#fbc02d"] {
+    span.material-icons[style*="color:#fbc02d"],
+    span.material-icons-outlined[style*="color:#fbc02d"] {
       color: var(--accentColor) !important;
     }
   }
@@ -5893,6 +5895,15 @@ a.menuLink[href*="mods&openPubMo"] + div {
 .mapListItem {
   background-color: var(--subBgST);
 
+  .mapAgeD {
+    margin: 2px;
+    margin: 2px;
+    font-family: var(--mainFont);
+    font-size: 1.5rem;
+    border-bottom-left-radius: 24px;
+    padding: 0.5rem 1rem;
+  }
+
   a {
     font-family: var(--subFont);
     font-size: 1.3rem;
@@ -5923,7 +5934,12 @@ a.menuLink[href*="mods&openPubMo"] + div {
 
   .mapActionHol {
     span {
-      font-size: 2.5rem !important;
+      font-size: 5rem !important;
+    }
+
+    .mapActionB:last-child,
+    .mapActionB:first-child:not([onClick*="loadUserMod"]) {
+      transform: scale(0.4);
     }
   }
 }
@@ -6009,6 +6025,34 @@ a.menuLink[href*="mods&openPubMo"] + div {
       margin-top: 17px;
       background: var(--subBg);
       font-family: var(--subFont);
+    }
+  }
+}
+
+//Game section right side
+.bigMFeatHold {
+  background-color: var(--subBgST) !important;
+
+  .biMFeatInfH {
+    background: transparent;
+    font-family: var(--subFont);
+    font-size: 1.3rem;
+    line-height: 2.4rem;
+    padding: 0;
+  }
+
+  .biMFeatInfB {
+    border: 0;
+    font-family: var(--mainFont);
+    letter-spacing: 1px;
+    padding: 1rem 1rem;
+    width: fit-content;
+    display: inherit;
+    background: var(--subBgST);
+
+    &:hover {
+      border: none !important;
+      background: var(--gradientColor4) !important;
     }
   }
 }

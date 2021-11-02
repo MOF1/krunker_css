@@ -3854,7 +3854,8 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
   opacity: 0.4;
 }
 
-.bigMenTabs .bigMenTab span.material-icons[style*="color:#fbc02d"] {
+.bigMenTabs .bigMenTab span.material-icons[style*="color:#fbc02d"],
+.bigMenTabs .bigMenTab span.material-icons-outlined[style*="color:#fbc02d"] {
   color: var(--c_whiteST) !important;
 }
 
@@ -3863,7 +3864,8 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
   border-bottom: 5px solid var(--accentColor) !important;
 }
 
-.bigMenTabs .bigMenTabA span.material-icons[style*="color:#fbc02d"] {
+.bigMenTabs .bigMenTabA span.material-icons[style*="color:#fbc02d"],
+.bigMenTabs .bigMenTabA span.material-icons-outlined[style*="color:#fbc02d"] {
   color: var(--accentColor) !important;
 }
 
@@ -4543,6 +4545,15 @@ a.menuLink[href*="mods&openPubMo"] + div span {
   background-color: var(--subBgST);
 }
 
+.mapListItem .mapAgeD {
+  margin: 2px;
+  margin: 2px;
+  font-family: var(--mainFont);
+  font-size: 1.5rem;
+  border-bottom-left-radius: 24px;
+  padding: 0.5rem 1rem;
+}
+
 .mapListItem a {
   font-family: var(--subFont);
   font-size: 1.3rem;
@@ -4573,7 +4584,13 @@ a.menuLink[href*="mods&openPubMo"] + div span {
 }
 
 .mapActionOvrl .mapActionHol span {
-  font-size: 2.5rem !important;
+  font-size: 5rem !important;
+}
+
+.mapActionOvrl .mapActionHol .mapActionB:last-child,
+.mapActionOvrl .mapActionHol .mapActionB:first-child:not([onClick*="loadUserMod"]) {
+  -webkit-transform: scale(0.4);
+          transform: scale(0.4);
 }
 
 .likdByFrnd {
@@ -4651,5 +4668,34 @@ a.menuLink[href*="mods&openPubMo"] + div span {
   margin-top: 17px;
   background: var(--subBg);
   font-family: var(--subFont);
+}
+
+.bigMFeatHold {
+  background-color: var(--subBgST) !important;
+}
+
+.bigMFeatHold .biMFeatInfH {
+  background: transparent;
+  font-family: var(--subFont);
+  font-size: 1.3rem;
+  line-height: 2.4rem;
+  padding: 0;
+}
+
+.bigMFeatHold .biMFeatInfB {
+  border: 0;
+  font-family: var(--mainFont);
+  letter-spacing: 1px;
+  padding: 1rem 1rem;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: inherit;
+  background: var(--subBgST);
+}
+
+.bigMFeatHold .biMFeatInfB:hover {
+  border: none !important;
+  background: var(--gradientColor4) !important;
 }
 /*# sourceMappingURL=main_custom.css.map */
