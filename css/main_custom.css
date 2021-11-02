@@ -3976,9 +3976,15 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
 }
 
 .setHed[style="float:right;color:rgba(255,255,255,0.4)"] span,
+.setHed[style="float:right;color:rgba(255,255,255,0.4)"] a,
 .setHed[style="margin-top:10px;"] span,
+.setHed[style="margin-top:10px;"] a,
 .setHed[style="margin-top:20px"] span,
-.setHed[style="margin-top:16px"] span {
+.setHed[style="margin-top:20px"] a,
+.setHed[style="margin-top:16px"] span,
+.setHed[style="margin-top:16px"] a,
+.setHed[style="margin-top:0px"] span,
+.setHed[style="margin-top:0px"] a {
   font-family: var(--mainFont);
 }
 
