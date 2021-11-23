@@ -2129,6 +2129,10 @@ input[type="checkbox"]:checked + .slider2:before {
 }
 #customizeContainer {
   min-height: 600px;
+  // display: grid;
+  // grid-template-columns: repeat(2, 1fr);
+  // gap: 1rem;
+
   .settName {
     border: none;
     font-family: var(--subFont);
@@ -2207,6 +2211,7 @@ input[type="checkbox"]:checked + .slider2:before {
     border: none !important;
     box-shadow: none !important;
     transition: background-color 280ms ease;
+    // width: calc(100% - 1rem) !important;
 
     &:hover {
       background-color: var(--subBg) !important;
@@ -3559,6 +3564,9 @@ $blurBg: #ffffff1f;
     font-family: var(--mainFont);
     font-size: 1.7rem;
     margin-bottom: 1rem;
+    img[src*="img/ranked"] {
+      display: none;
+    }
     .menuClassLevelBox {
       padding: unset;
       margin-right: 20px;

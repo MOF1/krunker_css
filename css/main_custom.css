@@ -2136,6 +2136,10 @@ input[type="checkbox"]:checked + .slider2:before {
   margin-bottom: 1rem;
 }
 
+#menuClassContainer #menuClassNameTag img[src*="img/ranked"] {
+  display: none;
+}
+
 #menuClassContainer #menuClassNameTag .menuClassLevelBox {
   padding: unset;
   margin-right: 20px;
