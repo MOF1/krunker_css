@@ -5461,6 +5461,10 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
   background: var(--subBgST);
   font-family: var(--subFont);
   color: var(--c_white) !important;
+
+  a {
+    font-family: var(--mainFont);
+  }
 }
 
 // div[style*="margin-top:10px;"] {

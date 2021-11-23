@@ -4144,6 +4144,10 @@ div[style="width:100%;text-align:center;margin-top:10px;background-color:rgba(0,
   color: var(--c_white) !important;
 }
 
+.challCrdMsg a {
+  font-family: var(--mainFont);
+}
+
 .challMapCrd {
   width: 376px;
   border-radius: 5px;
